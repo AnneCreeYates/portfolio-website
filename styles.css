@@ -4,3 +4,15 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
+li {
+   display: flex;
+   justify-content: space-around;
+   background-color:blue ;
+}
+
+a  {
+    text-decoration: none;
+    padding: 1rem;
+    color: #fff;
+}
