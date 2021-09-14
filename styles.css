@@ -149,10 +149,25 @@ a  {
 
     .about {
         padding: 8%;
+        position: relative;
+        bottom: 2em;
 
     }
 
     .about h3 {
         font-family: 'Allison', cursive;
-        font-size: 12vw;
+        font-size: 13vw;
+        position: relative;
+        bottom: 1.8em;
+        z-index: 1;
     }
+
+    .about p {
+        border: #42ecf5 3px dashed;
+        border-radius: 23px;
+        position: relative;
+        bottom: 6em;
+    }
+    /*make a frosting glass effect for the p section and try to make the h3 get stuck to the border of the p;
+    figure out the whole background setting and possibly waht dynamic items we wan to put in the page - js;
+    make hamburger go on top of everything - at the moment is hidden in the bacground behind hello - difficult to access!*/
