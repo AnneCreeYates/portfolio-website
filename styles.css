@@ -5,6 +5,20 @@
     scroll-behavior: smooth;
 }
 
+body {
+   background: url(imgs\London-Skyline2.png) center center;
+   background-color: #6c4299;
+   border: #f31b75 solid 5px;
+   
+}
+
+.backgroundImg {
+    border: #ebd7a9 solid 3px;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    
+}
 
 li {
    /* display: flex;*/
@@ -33,6 +47,8 @@ a  {
 
 .hamburger {
     display: none;
+    z-index: 1;
+    max-width: 12vw;
 }
 
 .bar {
@@ -79,10 +95,11 @@ a  {
         top: 0;
         flex-direction: column;
         /* background-color: darkblue; */
-        width: 75%;
+        width: 100%;
         border-radius: 15px;
         text-align: center;
         transition: 0.3s;
+        z-index: 2;
         /* box-shadow: 0 13px 32px #6c4299; */
     }
 
@@ -115,59 +132,59 @@ a  {
     }
 
 }  
-    /*introduction*/
+/*introduction*/
     
-    .introduction h1 {
-        font-family: 'Allison', cursive;
-        font-size: 12em;
-        text-shadow: 0 0 3px #26989c, 0 0 5px #095568;
-        color: #42ecf5;
-        padding: 8%;
-        transform: rotate(17deg);
-        position: relative;
-        bottom: 0.23em;
-        display: flex;
-    }
+.introduction h1 {
+    font-family: 'Allison', cursive;
+    font-size: 5rem;
+    text-shadow: 0 0 3px #26989c, 0 0 5px #095568;
+    color: #42ecf5;
+    padding: 8%;
+    transform: rotate(17deg);
+    position: relative;
+    bottom: 0.23em;
+    display: inline-grid;
+}
 
-    .introduction h2 {
-        font-family: 'Allison', cursive;
-        font-size: 22vw;
-        padding: 5%;
-        position:relative;
-        bottom: 2em;
-    }
+.introduction h2 {
+    font-family: 'Allison', cursive;
+    font-size: 2em;
+    padding: 5%;
+    position:relative;
+    bottom: 2em;
+}
 
-    .introduction h3 {
-        padding: 8%;
-        font-family: 'Allison', cursive;
-        font-size: 15vw;
-        position: relative;
-        bottom: 3em;
-    }
+.introduction h3 {
+    padding: 8%;
+    font-family: 'Allison', cursive;
+    font-size: 2em;
+    position: relative;
+    bottom: 3em;
+}
 
-    /* About section*/
+/* About section*/
 
-    .about {
-        padding: 8%;
-        position: relative;
-        bottom: 2em;
+.about {
+    padding: 8%;
+    position: relative;
+    bottom: 2em;
 
-    }
+}
 
-    .about h3 {
-        font-family: 'Allison', cursive;
-        font-size: 13vw;
-        position: relative;
-        bottom: 1.8em;
-        z-index: 1;
-    }
+.about h3 {
+    font-family: 'Allison', cursive;
+    font-size: 3em;
+    position: relative;
+    bottom: 1.8em;
+    z-index: 1;
+}
 
-    .about p {
-        border: #42ecf5 3px dashed;
-        border-radius: 23px;
-        position: relative;
-        bottom: 6em;
-    }
-    /*make a frosting glass effect for the p section and try to make the h3 get stuck to the border of the p;
-    figure out the whole background setting and possibly waht dynamic items we wan to put in the page - js;
-    make hamburger go on top of everything - at the moment is hidden in the bacground behind hello - difficult to access!*/
+.about p {
+    border: #42ecf5 3px dashed;
+    border-radius: 23px;
+    position: relative;
+    bottom: 6em;
+}
+/*make a frosting glass effect for the p section and try to make the h3 get stuck to the border of the p;
+figure out the whole background setting and possibly waht dynamic items we wan to put in the page - js;
+make hamburger go on top of everything - at the moment is hidden in the bacground behind hello - difficult to access!*/
