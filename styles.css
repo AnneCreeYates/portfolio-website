@@ -6,19 +6,13 @@
 }
 
 body {
-   background: url(imgs\London-Skyline2.png) center center;
-   background-color: #6c4299;
+   background-image: url(../imgs/London-Skyline2.png);
+   background-size: contain;
+   background-repeat: repeat-x;
    border: #f31b75 solid 5px;
    
 }
 
-.backgroundImg {
-    border: #ebd7a9 solid 3px;
-    display: flex;
-    position: absolute;
-    width: 100%;
-    
-}
 
 li {
    /* display: flex;*/
@@ -95,11 +89,11 @@ a  {
         top: 0;
         flex-direction: column;
         /* background-color: darkblue; */
-        width: 100%;
+        width: 89%;
         border-radius: 15px;
         text-align: center;
         transition: 0.3s;
-        z-index: 2;
+        z-index: 3;
         /* box-shadow: 0 13px 32px #6c4299; */
     }
 
