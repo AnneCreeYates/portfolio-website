@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(../imgs/London-Skyline2.png), linear-gradient(to right, #354e85, #29aca5);
+    background: url(../imgs/London-Skyline2.png), linear-gradient(to right, #354e85, #297a88 45%, #229292 74%, #29aca5);
     /* background-image: url(../imgs/London-Skyline2.png); */
     background-size: contain;
     background-repeat: no-repeat;
@@ -59,7 +59,7 @@ a  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, #363269, #149b94);
+    background-image: linear-gradient(to right,#363269, #23a09a);
 }
 
 .nav-item {
