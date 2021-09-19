@@ -135,7 +135,7 @@ a  {
 .introduction h1 {
     font-family: 'Allison', cursive;
     font-size: 5rem;
-    text-shadow: 0 0 7px #26989c, 0 0 5px #095568;
+    text-shadow: 0 0 7px #053636, 0 0 6px #062931;
     color: #e60532;
     padding: 8%;
     /* transform: rotate(17deg); */
@@ -152,6 +152,7 @@ a  {
     bottom: 3.1em;
     margin: auto 0.3em;
     color: #f0e5e4;
+    text-shadow: 0 0 7px #053636, 0 0 7px #062931;
 }
 
 .introduction h3 {
@@ -175,6 +176,7 @@ a  {
 
 .introduction h4 span {
     color: #e60532;
+    text-shadow: 0 0 7px #053636, 0 0 px #062931;
 }
 
 /* About section*/
@@ -192,16 +194,22 @@ a  {
     position: relative;
     bottom: 1.8em;
     z-index: 1;
-    color: #f0e5e4;
+    color: #181616;
+    
 }
 
 .about p {
-    border: #42ecf5 3px dashed;
     border-radius: 23px;
     position: relative;
     bottom: 6em;
-    color: #f0e5e4;
+    color: #181515;
+    background: white;
+    filter: blur(5px);
+    opacity: 0.7;
+    /*try to figure out how to make the baclkground blury but letters not*/
 }
+
+
 /*make a frosting glass effect for the p section and try to make the h3 get stuck to the border of the p;
 figure out the whole background setting and possibly waht dynamic items we wan to put in the page - js;
 make hamburger go on top of everything - at the moment is hidden in the bacground behind hello - difficult to access!*/
