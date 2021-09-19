@@ -6,11 +6,11 @@
 }
 
 body {
-   background-image: url(../imgs/London-Skyline2.png);
-   background-size: contain;
-   background-repeat: repeat-x;
-   border: #f31b75 solid 5px;
-   
+    background: url(../imgs/London-Skyline2.png), linear-gradient(to right, #354e85, #29aca5);
+    /* background-image: url(../imgs/London-Skyline2.png); */
+    background-size: contain;
+    background-repeat: no-repeat;
+       
 }
 
 
@@ -59,7 +59,7 @@ a  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #6c4299;
+    background-image: linear-gradient(to right, #363269, #149b94);
 }
 
 .nav-item {
@@ -73,7 +73,7 @@ a  {
 }
 
 .nav-link:hover {
-    color:#2a173d;
+    color:#48e6d8;
 }
 
 /* .nav-logo {
@@ -93,13 +93,14 @@ a  {
         border-radius: 15px;
         text-align: center;
         transition: 0.3s;
-        z-index: 3;
+        z-index: 2;
         /* box-shadow: 0 13px 32px #6c4299; */
     }
 
     .nav-menu.active {
         left: 1em;
         top: 0.4em;
+        z-index: 1;
     }
 
     .nav-item {
@@ -117,12 +118,12 @@ a  {
 
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
-        background-color: #ebd7a9;
+        background-color: #f0f5f5;
     }
 
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-        background-color: #ebd7a9;
+        background-color: #f0f5f5;
     }
 
 }  
