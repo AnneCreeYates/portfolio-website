@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+/*places the background image and gradient*/
 body {
     background: url(../imgs/London-Skyline2.png), linear-gradient(to right, #354e85, #297a88 45%, #229292 74%, #29aca5);
     /* background-image: url(../imgs/London-Skyline2.png); */
@@ -72,6 +73,8 @@ a  {
     color: #f2edf7;
 }
 
+
+/* nav link hover doesn't work as intended - it only shows after clicking*/
 .nav-link:hover {
     color:#48e6d8;
 }
@@ -89,7 +92,7 @@ a  {
         top: 0;
         flex-direction: column;
         /* background-color: darkblue; */
-        width: 89%;
+        width: 60%;
         border-radius: 15px;
         text-align: center;
         transition: 0.3s;
@@ -132,10 +135,10 @@ a  {
 .introduction h1 {
     font-family: 'Allison', cursive;
     font-size: 5rem;
-    text-shadow: 0 0 3px #26989c, 0 0 5px #095568;
-    color: #42ecf5;
+    text-shadow: 0 0 7px #26989c, 0 0 5px #095568;
+    color: #e60532;
     padding: 8%;
-    transform: rotate(17deg);
+    /* transform: rotate(17deg); */
     position: relative;
     bottom: 0.23em;
     display: inline-grid;
@@ -143,18 +146,35 @@ a  {
 
 .introduction h2 {
     font-family: 'Allison', cursive;
-    font-size: 2em;
+    font-size: 3em;
     padding: 5%;
     position:relative;
-    bottom: 2em;
+    bottom: 3.1em;
+    margin: auto 0.3em;
+    color: #f0e5e4;
 }
 
 .introduction h3 {
     padding: 8%;
     font-family: 'Allison', cursive;
-    font-size: 2em;
+    font-size: 2.4em;
     position: relative;
+    left: 3.7em;
     bottom: 3em;
+    color: #f1e8e8;
+}
+
+.introduction h4 {
+    color: #f1e8e8;
+    font-family: 'Allison', cursive;
+    font-size: 2.6em;
+    position: relative;
+    bottom: 4.4em;
+    margin: auto 1.4em;
+}
+
+.introduction h4 span {
+    color: #e60532;
 }
 
 /* About section*/
@@ -163,7 +183,7 @@ a  {
     padding: 8%;
     position: relative;
     bottom: 2em;
-
+    
 }
 
 .about h3 {
@@ -172,6 +192,7 @@ a  {
     position: relative;
     bottom: 1.8em;
     z-index: 1;
+    color: #f0e5e4;
 }
 
 .about p {
@@ -179,6 +200,7 @@ a  {
     border-radius: 23px;
     position: relative;
     bottom: 6em;
+    color: #f0e5e4;
 }
 /*make a frosting glass effect for the p section and try to make the h3 get stuck to the border of the p;
 figure out the whole background setting and possibly waht dynamic items we wan to put in the page - js;
