@@ -11,7 +11,7 @@ body {
     /* background-image: url(../imgs/London-Skyline2.png); */
     background-size: contain;
     background-repeat: no-repeat;
-       
+    
 }
 
 
@@ -150,7 +150,7 @@ a  {
     padding: 5%;
     position:relative;
     bottom: 3.1em;
-    margin: auto 0.3em;
+    margin: auto 0.7em;
     color: #f0e5e4;
     text-shadow: 0 0 7px #053636, 0 0 7px #062931;
 }
@@ -171,7 +171,7 @@ a  {
     font-size: 2.6em;
     position: relative;
     bottom: 4.4em;
-    margin: auto 1.4em;
+    margin: auto 1.5em;
 }
 
 .introduction h4 span {
@@ -190,24 +190,41 @@ a  {
 
 .about h3 {
     font-family: 'Allison', cursive;
-    font-size: 3em;
+    font-size: 3.3em;
     position: relative;
-    bottom: 1.8em;
+    bottom: 1.3em;
+    left: 46vw;
     z-index: 1;
     color: #181616;
+    text-shadow: 0 0 7px #d6e7e7, 0 0 7px #c1cacc;
+    
+}
+
+.container {
+    border: 1px solid rgba(10, 14, 13, 0.4);
+    border-radius: 15px;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
+    font-size: 1.3rem;
+    height: auto;
+    overflow: hidden;
+    padding: 1.3em;
+    position: relative;
+    bottom: 4.6em;
+    background-color: rgba(250, 253, 253, 0.493);
+    backdrop-filter: blur(45px) saturate(70%) contrast(80%) brightness(130%);
+    content: '';
+        
     
 }
 
 .about p {
-    border-radius: 23px;
-    position: relative;
-    bottom: 6em;
-    color: #181515;
-    background: white;
-    filter: blur(5px);
-    opacity: 0.7;
-    /*try to figure out how to make the baclkground blury but letters not*/
+    color: rgb(52, 52, 53);
+    z-index: 2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    
 }
+
 
 
 /*make a frosting glass effect for the p section and try to make the h3 get stuck to the border of the p;
