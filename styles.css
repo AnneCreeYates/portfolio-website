@@ -138,7 +138,6 @@ a  {
     text-shadow: 0 0 7px #053636, 0 0 6px #062931;
     color: #e60532;
     padding: 8%;
-    /* transform: rotate(17deg); */
     position: relative;
     bottom: 0.23em;
     display: inline-grid;
@@ -181,7 +180,7 @@ a  {
 
 /* About section*/
 
-.about {
+.about, .work {
     padding: 8%;
     position: relative;
     bottom: 2em;
@@ -200,10 +199,10 @@ a  {
     
 }
 .work h3 {
-    margin: auto -0.5em;
+    margin: auto -1em;
 }
 
-.container {
+.container, .work p {
     border: 1px solid rgba(10, 14, 13, 0.4);
     border-radius: 15px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
@@ -220,6 +219,18 @@ a  {
     
 }
 
+.work p span {
+    font-family: 'Allison', cursive;
+    font-size:  1.9em;
+    text-shadow: 0 0 3px #053636, 0 0 6px #062931;
+    color: #f8f4f5;
+    
+    position: relative;
+    bottom: 0.4em;
+    display: inline-grid;
+   
+}
+
 .about p {
     color: rgb(52, 52, 53);
     z-index: 2;
@@ -227,6 +238,7 @@ a  {
     font-weight: 500;
     
 }
+
 
 
 
