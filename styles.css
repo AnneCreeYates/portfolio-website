@@ -188,7 +188,7 @@ a  {
     
 }
 
-.about h3 {
+.about h3, .work h3 {
     font-family: 'Allison', cursive;
     font-size: 3.3em;
     position: relative;
@@ -198,6 +198,9 @@ a  {
     color: #181616;
     text-shadow: 0 0 7px #d6e7e7, 0 0 7px #c1cacc;
     
+}
+.work h3 {
+    margin: auto -0.5em;
 }
 
 .container {
@@ -210,7 +213,7 @@ a  {
     padding: 1.3em;
     position: relative;
     bottom: 4.6em;
-    background-color: rgba(250, 253, 253, 0.493);
+    background-color: rgba(250, 253, 253, 0.3);
     backdrop-filter: blur(45px) saturate(70%) contrast(80%) brightness(130%);
     content: '';
         
@@ -229,4 +232,4 @@ a  {
 
 /*make a frosting glass effect for the p section and try to make the h3 get stuck to the border of the p;
 figure out the whole background setting and possibly waht dynamic items we wan to put in the page - js;
-make hamburger go on top of everything - at the moment is hidden in the bacground behind hello - difficult to access!*/
+fix the "about" button in the hamburger; it is not entirely clickable*/
