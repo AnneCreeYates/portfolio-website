@@ -22,8 +22,7 @@ li {
 
 a  {
     text-decoration: none;
-    font-family: 'Poiret One', cursive;
-    
+    font-family: 'Allison', cursive;
 }
 
 
@@ -68,7 +67,7 @@ a  {
 }
 
 .nav-link {
-    font-size: 1.6rem;
+    font-size: 3em;
     font-weight: 400;
     color: #f2edf7;
 }
@@ -76,7 +75,10 @@ a  {
 
 /* nav link hover doesn't work as intended - it only shows after clicking*/
 .nav-link:hover {
-    color:#48e6d8;
+    color:#062931;
+    text-shadow: 7px 15px 0 #f8f5f4, 12px 34px 0 #f51303;
+    
+    /*in the full size website move the nav links to the middle of the buildings - will look better*/
 }
 
 /* .nav-logo {
@@ -194,7 +196,7 @@ a  {
     bottom: 1.3em;
     left: 46vw;
     z-index: 1;
-    color: #181616;
+    color: #252424;
     text-shadow: 0 0 7px #d6e7e7, 0 0 7px #c1cacc;
     
 }
@@ -202,20 +204,32 @@ a  {
     margin: auto -1em;
 }
 
-.container, .work p {
+.contact h3 {
+    color: #e60532;
+    font-family: 'Allison', cursive;
+    font-size: 2.9em;
+    text-shadow: 0 0 7px #053636, 0 0 7px #042830;
+    position: relative;
+    bottom: 1em;
+    line-height: 0.7em;
+}
+
+
+.container, .work p, .contact {
     border: 1px solid rgba(10, 14, 13, 0.4);
     border-radius: 15px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
     font-size: 1.3rem;
     height: auto;
-    overflow: hidden;
+    /* overflow: hidden; - it only refers to  the contact form h3 thig; if it is on the text is overflowing and therefore hidden*/
     padding: 1.3em;
     position: relative;
     bottom: 4.6em;
     background-color: rgba(250, 253, 253, 0.3);
-    backdrop-filter: blur(45px) saturate(70%) contrast(80%) brightness(130%);
+    backdrop-filter: blur(2) saturate(70%) contrast(80%) brightness(130%);
+    /*blur in backdrop filter doesn't do much. it makes the background a bit more transparent that it is without it*/
     content: '';
-        
+    
     
 }
 
@@ -224,7 +238,6 @@ a  {
     font-size:  1.9em;
     text-shadow: 0 0 3px #053636, 0 0 6px #062931;
     color: #f8f4f5;
-    
     position: relative;
     bottom: 0.4em;
     display: inline-grid;
@@ -232,11 +245,23 @@ a  {
 }
 
 .about p {
-    color: rgb(52, 52, 53);
+    color: #252424;
+    /* color: rgb(52, 52, 53); */
     z-index: 2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     
+}
+
+.contact {
+    margin: 1.3em;
+    text-align: center;
+    
+}
+
+.form-controller {
+    background: none;
+    text-decoration: underline;
 }
 
 
