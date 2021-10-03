@@ -138,72 +138,72 @@ a  {
     margin: 0 auto;
     height: auto;
     width: 90%;
-    /* background:rgba(10, 14, 13, 0.4); */
-    border: 3px solid transparent; /*if the border is gone the positioning goes out of whack for some reason*/
-}
-
-.introduction h1 {
-    font-family: 'Allison', cursive;
-    font-size: 5em;
-    text-shadow: 0 0 7px #053636, 0 0 6px #062931;
-    color: #e60532;
-    padding: 8%;
-    position: relative;
-    bottom: 0.23em;
-    display: inline-grid;
-}/*Hello*/
-
-.introduction h2 {
-    font-family: 'Allison', cursive;
-    font-size: 3em;
-    display: inline-flex;
-    position: relative;
-    bottom: 2em;
-    margin: auto 0;
-    color: #f0e5e4;
-    text-shadow: 0 0 7px #053636, 0 0 7px #062931;
-    display: inline-grid;
-} /*Front End Developer*/
-
-.introduction h3 {
-    padding: 8%;
-    font-family: 'Allison', cursive;
-    font-size: 2.4em;
-    position: relative;
-    /* border: solid 3px blue; */
-    bottom: 2.8em;
-    left: 3.7em;
-    color: #f1e8e8;
-    display: inline-grid;
-} /*I'm Anna.*/
-
-.introduction h4 {
-    color: #f1e8e8;
-    font-family: 'Allison', cursive;
-    font-size: 2.6em;
-    position: relative;
-    bottom: 2.6em;
-    left: 1em;
-    /* border: 3px solid lemonchiffon; */
-    width: 100%;
-    height: auto;
-    display: inline-grid;
-} /*located in London*/
-
-.introduction h4 span {
-    color: #e60532;
-    text-shadow: 0 0 7px #053636, 0 0 px #062931;
-    font-size: 1.5em;
-    width: 100%;
-    display: inline-grid;
+    background:rgba(10, 14, 13, 0.4);
     
-
 }
+
+    .introduction h1 {
+        font-family: 'Allison', cursive;
+        font-size: 5em;
+        text-shadow: 0 0 7px #053636, 0 0 6px #062931;
+        color: #e60532;
+        padding: 8%;
+        position: relative;
+        bottom: 0.23vw;
+        display: inline-grid;
+    }/*Hello*/
+
+    .introduction h2 {
+        font-family: 'Allison', cursive;
+        font-size: 3em;
+        display: inline-flex;
+        position: relative;
+        bottom: 2vw;
+        margin: auto 0;
+        color: #f0e5e4;
+        text-shadow: 0 0 7px #053636, 0 0 7px #062931;
+        display: inline-grid;
+    } /*Front End Developer*/
+
+    .introduction h3 {
+        padding: 8%;
+        font-family: 'Allison', cursive;
+        font-size: 2.4em;
+        position: relative;
+        /* border: solid 3px blue; */
+        bottom: 2.8vw;
+        left: 3.7vw;
+        color: #f1e8e8;
+        display: inline-grid;
+    } /*I'm Anna.*/
+
+    .introduction h4 {
+        color: #f1e8e8;
+        font-family: 'Allison', cursive;
+        font-size: 2.6em;
+        position: relative;
+        bottom: 2.6vw;
+        left: 1vw;
+        /* border: 3px solid lemonchiffon; */
+        width: 100%;
+        height: auto;
+        display: inline-grid;
+    } /*located in London*/
+
+    .introduction h4 span {
+        color: #e60532;
+        text-shadow: 0 0 7px #053636, 0 0 px #062931;
+        font-size: 1.5em;
+        width: fit-content;
+        display:inline-grid;
+        
+
+    }
 
 @media only screen and (min-width: 400px) {
 
     .introduction h3 {
-        margin: auto 1.9em;
+        margin: auto 0;
             
     }
 
@@ -215,7 +215,7 @@ a  {
 
     .introduction h4 {
         width: 100%;
-        margin: auto 1em;
+        
     }
 
     .introduction span {
@@ -308,38 +308,38 @@ a  {
     
 }
 
-.form-controller {
-    font-size: 0.9em;
-    padding: 1em 0 0.6em 0;
-    width: 100%;
-    position: relative;
-    bottom: 2em;
-    text-align: center;
-    margin: 0.2em auto;
-    border-radius: 12px;
-}
+    .form-controller {
+        font-size: 0.9em;
+        padding: 1em 0 0.6em 0;
+        width: 100%;
+        position: relative;
+        bottom: 2em;
+        text-align: center;
+        margin: 0.2em auto;
+        border-radius: 12px;
+    }
 
-.message {
-    height: 150px;
-    width: 100%;
-    font-size: 0.9em;
-    text-align: start;
-    padding: 0.6em;
-    border-radius: 12px;
-}
+    .message {
+        height: 150px;
+        width: 100%;
+        font-size: 0.9em;
+        text-align: start;
+        padding: 0.6em;
+        border-radius: 12px;
+    }
 
-.form-controller-submit {
-    position: relative;
-    top: 0.2em;
-    font-size: 2em;
-    color: #faf5f6;
-    font-family: 'Allison', cursive;
-    text-shadow: 0 0 7px #053636, 0 0 7px #042830;
-    width: 40%;
-    height: auto;
-    border-radius: 50%;
-    background: linear-gradient(to right,#363269, #23a09a);
-}
+    .form-controller-submit {
+        position: relative;
+        top: 0.2em;
+        font-size: 2em;
+        color: #faf5f6;
+        font-family: 'Allison', cursive;
+        text-shadow: 0 0 7px #053636, 0 0 7px #042830;
+        width: 40%;
+        height: auto;
+        border-radius: 50%;
+        background: linear-gradient(to right,#363269, #23a09a);
+    }
 
 
 
