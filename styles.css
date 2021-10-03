@@ -87,7 +87,7 @@ a  {
     color: #482ff7;
 } */
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 700px) {
     .nav-menu {
         position: fixed;
         left: -120%;
@@ -138,7 +138,8 @@ a  {
     margin: 0 auto;
     height: auto;
     width: 90%;
-    /* border: 3px solid red; */
+    /* background:rgba(10, 14, 13, 0.4); */
+    border: 3px solid transparent; /*if the border is gone the positioning goes out of whack for some reason*/
 }
 
 .introduction h1 {
@@ -171,7 +172,7 @@ a  {
     position: relative;
     /* border: solid 3px blue; */
     bottom: 2.8em;
-    left: 3em;
+    left: 3.7em;
     color: #f1e8e8;
     display: inline-grid;
 } /*I'm Anna.*/
@@ -186,14 +187,43 @@ a  {
     /* border: 3px solid lemonchiffon; */
     width: 100%;
     height: auto;
-    display: inline-flex;
+    display: inline-grid;
 } /*located in London*/
 
 .introduction h4 span {
     color: #e60532;
     text-shadow: 0 0 7px #053636, 0 0 px #062931;
     font-size: 1.5em;
-    display: inline-flex;
+    width: 100%;
+    display: inline-grid;
+    
+
+}
+
+@media only screen and (min-width: 400px) {
+
+    .introduction h3 {
+        margin: auto 1.9em;
+            
+    }
+
+    .introduction h2 {
+        width: 100%;
+        justify-content: center;
+        font-size: 3.4em;
+    }
+
+    .introduction h4 {
+        width: 100%;
+        margin: auto 1em;
+    }
+
+    .introduction span {
+        position: relative;
+        left: 1.6em;
+        top: -0.6em;
+    }
+
 }
 
 /* About section*/
@@ -202,7 +232,7 @@ a  {
     padding: 8%;
     position: relative;
     bottom: 2em;
-    
+        
 }
 
 .about h3, .work h3 {
@@ -214,6 +244,7 @@ a  {
     z-index: 1;
     color: #252424;
     text-shadow: 0 0 7px #d6e7e7, 0 0 7px #c1cacc;
+    display: inline-grid;
     
 }
 .work h3 {
