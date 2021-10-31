@@ -137,11 +137,29 @@ a  {
     }
     /*ending of the nav*/
 
+    .framed-image {
+        width: 100%;
+        height: 0 auto;
+        display: grid;
+        text-align: center;
+        position: relative;
+        bottom: 38vw;
+    }
+
     .image {
         width: 95%;
         height: 0 auto;
         position: relative;
-        top: 1em;    
+            
+
+    }
+
+    .image2 {
+        width: 56%;
+        height: 0 auto;
+        position: relative;
+        top: 62vw;
+        left: 26vw;
 
     }
 
@@ -165,7 +183,7 @@ a  {
         color: #e60532;
         padding: 8%;
         position: relative;
-        bottom: 0.23vw;
+        bottom: 135vw;
         display: inline-grid;
     }/*Hello*/
 
@@ -174,7 +192,7 @@ a  {
         font-size: 13vw;
         display: inline-flex;
         position: relative;
-        bottom: 6vw;
+        bottom: 79vw;
         left: 12vw;
         margin: auto 0;
         color: #f0e5e4;
@@ -187,9 +205,8 @@ a  {
         font-size: 10vw;
         position: relative;
         /* border: solid 3px blue; */
-        bottom: -1.9vw;
-        left: 3.7vw;
-        color: #f1e8e8;
+        bottom: 77vw;
+        color: #051d1f;
         display: inline-grid;
     } /*I'm Anna.*/
 
@@ -198,7 +215,7 @@ a  {
         font-family: 'Allison', cursive;
         font-size: 11vw;
         position: relative;
-        bottom: 2.6vw;
+        bottom: 78vw;
         left: 12vw;
         /* border: 3px solid lemonchiffon; */
         width: fit-content;
@@ -209,11 +226,11 @@ a  {
     .introduction h4 span {
         color: #e60532;
         text-shadow: 0 0 7px #053636, 0 0 #062931;
-        font-size: 18vw;
+        font-size: 20vw;
         width: fit-content;
         display: inline-grid;
         position: relative;
-        bottom: 18vw;
+        bottom: 15vw;
         left: 29vw;
 
     }
@@ -268,7 +285,6 @@ a  {
 
         .introduction h3 {
             font-size: 7vw;
-            display: ;
             position: relative;
             right: 22vw;
             bottom: 12vw;   
