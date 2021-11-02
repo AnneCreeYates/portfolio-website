@@ -174,8 +174,6 @@ a  {
     
 }
 
-
-
     .introduction h1 {
         font-family: 'Allison', cursive;
         font-size: 19vw;
@@ -192,7 +190,7 @@ a  {
         font-size: 13vw;
         display: inline-flex;
         position: relative;
-        bottom: 79vw;
+        bottom: 76vw;
         left: 12vw;
         margin: auto 0;
         color: #f0e5e4;
@@ -215,8 +213,8 @@ a  {
         font-family: 'Allison', cursive;
         font-size: 11vw;
         position: relative;
-        bottom: 78vw;
-        left: 12vw;
+        bottom: 80vw;
+        left: 18vw;
         /* border: 3px solid lemonchiffon; */
         width: fit-content;
         height: auto;
@@ -230,8 +228,8 @@ a  {
         width: fit-content;
         display: inline-grid;
         position: relative;
-        bottom: 15vw;
-        left: 29vw;
+        bottom: 11vw;
+        left: 19vw;
 
     }
 
@@ -317,10 +315,10 @@ a  {
 
 /* About section*/
 
-.about, .work, .contact {
+.about, .work {
     padding: 8%;
     position: relative;
-    top: -1em;
+    bottom: 65vw;
         
 }
 
@@ -393,7 +391,7 @@ a  {
     width: 90%;
     text-align: center;
     position: relative;
-    top: 0.2em;
+    bottom: 45vw; /*defines the position of the contact form from the bottom (makes some space for the footer)*/
     
 }
 
