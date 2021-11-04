@@ -149,7 +149,7 @@ a  {
     .image {
         width: 95%;
         height: 0 auto;
-        position: relative;
+        
             
 
     }
@@ -165,6 +165,14 @@ a  {
 
 }  
 /*introduction  -- work on the flexible positioning of the introduction elements, so not much editig is necessary for bigger screen*/
+
+
+/*placeholder image of pontu - a image link of the project goes here*/
+.project-image {
+    width: 100%;
+    height: auto;
+    
+}
 
 .introduction {
     margin: 0 auto;
@@ -236,14 +244,11 @@ a  {
 @media only screen and (min-width: 700px) {
         
     html {
-        /* border: 3px solid yellow; */
+        border: 3px solid yellow;
         /* background: rgb(150, 94, 9); */
-        display: inline-table;
-        position: relative;
-        margin: 0 auto;
-        /* padding: 0 5vw; */
-        width: 90vw; /*makes everything fill out 90% of the view port*/
-        
+        display: grid;
+        width: 100%;
+        height: auto;     
         
     } /*
     moves the about and below to the left side; it takes 50% - not whay I wanted by interesting outcome. May look into options*/
@@ -387,11 +392,11 @@ a  {
 }
 
 .contact {
-    margin: 0 auto 2em;
+    margin: 0 auto;
     width: 90%;
     text-align: center;
     position: relative;
-    bottom: 45vw; /*defines the position of the contact form from the bottom (makes some space for the footer)*/
+    bottom: 66vw; /*defines the position of the contact form from the bottom (makes some space for the footer)*/
     
 }
 
@@ -428,6 +433,13 @@ a  {
         background: linear-gradient(to right,#363269, #23a09a);
     }
 
-
+.references, a {
+    font-size: 1.3em;
+    text-align: center;
+    color: ivory;
+    position: relative;
+    bottom: 3vw;
+    line-height: 7vw;
+}
 
 
