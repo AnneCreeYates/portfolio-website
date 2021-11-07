@@ -12,9 +12,20 @@ body {
     /* background-image: url(../imgs/London-Skyline2.png); */
     background-size: contain;
     background-repeat: no-repeat;
-    
+    display: grid; /*may be necessary for making the grid layout*/
+    grid-template-columns: 100%;
+    grid-template-rows: 1 10%, auto;
+    gap: 23px;   
 }
 
+html {
+    /* border: 3px solid yellow; */
+    /* background: rgb(150, 94, 9); */
+    width: 100%;
+    height: auto;
+    
+} /*
+moves the about and below to the left side; it takes 50% - not whay I wanted by interesting outcome. May look into options*/
 
 li {
    /* display: flex;*/
@@ -33,7 +44,7 @@ a  {
 }*/
 
 .navbar {
-    position: sticky;
+    position: relative;
     top: 0;
     display: flex;
     justify-content: space-between;
@@ -91,6 +102,8 @@ a  {
     color: #482ff7;
 } */
 
+
+/*BEGINNING OF THE MOBILE SCREEN SIZE*/
 @media only screen and (max-width: 700px) {
     /*nav menu beginning*/
     .nav-menu {
@@ -137,128 +150,139 @@ a  {
     }
     /*ending of the nav*/
 
+
+    /*beginnign of the framed picture*/
     .framed-image {
         width: 100%;
-        height: 0 auto;
+        height: auto;
         display: grid;
-        text-align: center;
         position: relative;
-        bottom: 38vw;
-    }
-
-    .image {
-        width: 95%;
-        height: 0 auto;
+        top: 1.6em;
+        /* place-items: center; */
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+           
         
-            
-
     }
 
-    .image2 {
-        width: 56%;
-        height: 0 auto;
+    .image /*frame*/{
+        width: 100%;
+        height: auto;
+        grid-area: 1/1/13/13;
+        z-index: -1;
+    }
+
+    .image2 /*pontu*/{
+        width: 100%;
+        grid-area: 3/5/10/12;
+        z-index: -1;
         position: relative;
-        top: 62vw;
-        left: 26vw;
+        right: 0.8vw;
+        bottom: 13.5vw;
 
     }
+    /*ending of the framed picture*/
 
+    .introduction {
+        grid-row: 2;
+    }
 }  
 /*introduction  -- work on the flexible positioning of the introduction elements, so not much editig is necessary for bigger screen*/
 
+/*ENDING OF THE MOBILE SCREEN SIZE - INTRODUCTION ONLY (FOR NOW)*/
 
 /*placeholder image of pontu - a image link of the project goes here*/
 .project-image {
     width: 100%;
     height: auto;
-    
+    padding: 5%;
 }
 
 .introduction {
     margin: 0 auto;
     height: auto;
     width: 90%;
+    /* display: grid; */
+    text-align: center;
+    
     /* background:rgba(10, 14, 13, 0.4); */
     
 }
 
     .introduction h1 {
         font-family: 'Allison', cursive;
-        font-size: 19vw;
+        font-size: 17vw;
         text-shadow: 0 0 7px #053636, 0 0 6px #062931;
         color: #e60532;
-        padding: 8%;
-        position: relative;
-        bottom: 135vw;
-        display: inline-grid;
+        display: inline-flex;
+        grid-area: 1/3/3/6;    
+        
+        /*is included in the photo fram grid section*/
     }/*Hello*/
 
     .introduction h2 {
         font-family: 'Allison', cursive;
         font-size: 13vw;
         display: inline-flex;
-        position: relative;
+        /* position: relative;
         bottom: 76vw;
-        left: 12vw;
+        left: 12vw; *//*these are postions not taking grid division into account*/
         margin: auto 0;
         color: #f0e5e4;
         text-shadow: 0 0 7px #053636, 0 0 7px #062931;
-        display: inline-grid;
+        
+    
+        
     } /*Front End Developer*/
 
     .introduction h3 {
         font-family: 'Allison', cursive;
         font-size: 10vw;
-        position: relative;
+        /* position: relative; */
         /* border: solid 3px blue; */
-        bottom: 77vw;
+        /* bottom: 77vw; *//*these are postions not taking grid division into account*/
         color: #051d1f;
-        display: inline-grid;
+        display: inline-flex;
+        grid-area: 6/7/7/11;
+        position: relative;
+        left: 0.35em;
+        /*is included in the photo fram grid section*/
     } /*I'm Anna.*/
 
     .introduction h4 {
         color: #f1e8e8;
         font-family: 'Allison', cursive;
-        font-size: 11vw;
-        position: relative;
-        bottom: 80vw;
-        left: 18vw;
-        /* border: 3px solid lemonchiffon; */
-        width: fit-content;
+        font-size: 10vw;
+        width: 100%;
         height: auto;
-        display: inline-grid;
+        display: inline-block;
+        position: relative;
+        right: 1.7em;
     } /*located in London*/
 
     .introduction h4 span {
         color: #e60532;
         text-shadow: 0 0 7px #053636, 0 0 #062931;
         font-size: 20vw;
-        width: fit-content;
-        display: inline-grid;
+        width: 100%;
+        display: inline-flex;
         position: relative;
-        bottom: 11vw;
-        left: 19vw;
+        left: 2.7em;
+        bottom: 0.6em;   
 
-    }
+    }/*London*/
 
+
+/*BEGINNING OF THE SPECIFICALLY DESKTOP SIZE SETTINGS*/
 @media only screen and (min-width: 700px) {
         
-    html {
-        border: 3px solid yellow;
-        /* background: rgb(150, 94, 9); */
-        display: grid;
-        width: 100%;
-        height: auto;     
-        
-    } /*
-    moves the about and below to the left side; it takes 50% - not whay I wanted by interesting outcome. May look into options*/
+    
 
     .navbar, .nav-menu {
         width: 100%;
-        /* border: 3px solid red; */
-        border-radius: 23px;;
-        position:sticky;
-        top: 0;
+        border: 3px solid red;
+        border-radius: 23px;
+        /* background: none; */
     }
 
     .nav-item {
@@ -270,7 +294,7 @@ a  {
 
     /*beginning of the introduction section*/
     .introduction {
-        display: grid;
+        display: flex;
         position: relative;
         top: 9vw;
     }
@@ -279,23 +303,23 @@ a  {
             font-size: 10vw;
             position: relative;
             right: 8vw;
-        }
+        }/*Hello*/
 
         .introduction h2 {
             font-size: 9vw;
             
-        }
+        }/*Front End Developer*/
 
         .introduction h3 {
             font-size: 7vw;
             position: relative;
             right: 22vw;
             bottom: 12vw;   
-        }
+        }/*I'm Anna.*/
 
         .introduction h4 {
             font-size: 7vw;
-        }
+        }/*located in London*/
 
         .introduction h4 span {
             font-size: 15vw;
@@ -314,31 +338,40 @@ a  {
     /*beginning of contact section*/
     .contact {
         max-width: 65vw;
+        height: auto;
     }
     /*end of the contact section*/
 }
 
+/*END OF SPECIFICLY DESKTOP SETTINGS*/
+
+
 /* About section*/
 
 .about, .work {
-    padding: 8%;
-    position: relative;
-    bottom: 65vw;
+    padding: 5% 10%;    
         
 }
 
 .about h3, .work h3 {
     font-family: 'Allison', cursive;
     font-size: 3.3em;
-    position: relative;
+    /* position: relative;
     bottom: 1.3em;
-    left: 46vw;
+    left: 46vw; */
     z-index: 1;
     color: #252424;
     text-shadow: 0 0 7px #d6e7e7, 0 0 7px #c1cacc;
-    display: inline-grid;
+    display: inline-flex;
     
 }
+
+.about h3, .work h3 {
+    position: relative;
+    top: 5vw;
+    left: 46vw;
+}
+
 .work h3 {
     margin: auto -1em;
 }
@@ -362,13 +395,13 @@ a  {
     height: auto;
     /* overflow: hidden; - it only refers to  the contact form h3 thig; if it is on the text is overflowing and therefore hidden*/
     padding: 1.3em;
-    position: relative;
-    bottom: 4.6em;
+    /* position: relative;
+    bottom: 4.6em; */
     background-color: rgba(250, 253, 253, 0.3);
     backdrop-filter: blur(2) saturate(70%) contrast(80%) brightness(130%);
     /*blur in backdrop filter doesn't do much. it makes the background a bit more transparent that it is without it*/
     content: '';
-        
+    text-align:justify;  
 }
 
 .work p span {
@@ -376,10 +409,10 @@ a  {
     font-size:  1.9em;
     text-shadow: 0 0 3px #053636, 0 0 6px #062931;
     color: #f8f4f5;
-    position: relative;
-    bottom: 0.4em;
-    display: inline-grid;
-   
+    /* position: relative;
+    bottom: 0.4em; */
+    display: inline-flex;
+    text-align: center;
 }
 
 .about p, .form-controller {
@@ -392,11 +425,12 @@ a  {
 }
 
 .contact {
-    margin: 0 auto;
-    width: 90%;
+    margin: 10%;
+    width: 80%;
+    height: auto;
     text-align: center;
-    position: relative;
-    bottom: 66vw; /*defines the position of the contact form from the bottom (makes some space for the footer)*/
+    /* position: relative;
+    bottom: 66vw;*//* defines the position of the contact form from the bottom (makes some space for the footer) */
     
 }
 
@@ -404,8 +438,8 @@ a  {
         font-size: 0.9em;
         padding: 1em 0 0.6em 0;
         width: 100%;
-        position: relative;
-        bottom: 2em;
+        /* position: relative;
+        bottom: 2em; */
         text-align: center;
         margin: 0.2em auto;
         border-radius: 12px;
@@ -415,7 +449,7 @@ a  {
         height: 150px;
         width: 100%;
         font-size: 0.9em;
-        text-align: start;
+        text-align:justify;
         padding: 0.6em;
         border-radius: 12px;
     }
@@ -442,4 +476,13 @@ a  {
     line-height: 7vw;
 }
 
+footer {
+    width: 100%;
+    height: auto;
+    /* position: relative;
+    bottom: 45vw; */
+    justify-content: center;
+    display: flex;
+}
 
+/*there is too much space at the boottom, try to fix it later*/
