@@ -91,7 +91,7 @@ a  {
 /* nav link hover doesn't work as intended - it only shows after clicking*/
 .nav-link:hover {
     color:#062931;
-    text-shadow: 7px 15px 0 #f8f5f4, 12px 34px 0 #f51303;
+    text-shadow: 12px 14px #06567a;
     
     /*in the full size website move the nav links to the middle of the buildings - will look better*/
 }
@@ -103,99 +103,8 @@ a  {
 } */
 
 
-/*BEGINNING OF THE MOBILE SCREEN SIZE*/
-@media only screen and (max-width: 700px) {
-    /*nav menu beginning*/
 
-    .navbar {
-        padding: 1rem 1.5rem;
-    }
-    
-    .nav-menu {
-        position: fixed;
-        left: -120%;
-        top: 0;
-        flex-direction: column;
-        /* background-color: darkblue; */
-        width: 60%;
-        border-radius: 15px;
-        text-align: center;
-        transition: 0.3s;
-        z-index: 2;
-        /* box-shadow: 0 13px 32px #6c4299; */
-    }
-
-    .nav-menu.active {
-        left: 1em;
-        top: 0.4em;
-        z-index: 1;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-        background-color: #f0f5f5;
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-        background-color: #f0f5f5;
-    }
-    /*ending of the nav*/
-
-} 
-    /*beginnign of the framed picture*/
-    .framed-image {
-        width: 100%;
-        height: auto;
-        display: grid;
-        position: relative;
-        top: 1.6em;
-        /* place-items: center; */
-        grid-template-columns: repeat(12, 1fr);
-        grid-template-rows: repeat(7, 1fr);
-           
-        
-    }
-
-    .image /*frame*/{
-        width: 100%;
-        height: auto;
-        grid-area: 1/1/13/13;
-        z-index: -1;
-    }
-
-    .image2 /*pontu*/{
-        width: 100%;
-        grid-area: 3/5/10/12;
-        z-index: -1;
-        position: relative;
-        right: 0.8vw;
-        bottom: 13.5vw;
-
-    }
-    /*ending of the framed picture*/
-
-    .introduction {
-        grid-row: 2;
-    }
- 
-
-
-/*ENDING OF THE MOBILE SCREEN SIZE - INTRODUCTION ONLY (FOR NOW)*/
-
+/*GENERAL RULES - BEGINNING*/
 /*placeholder image of pontu - a image link of the project goes here*/
 .project-image {
     width: 100%;
@@ -203,16 +112,12 @@ a  {
     padding: 5%;
 }
 
-.introduction {
-    margin: 0 auto;
-    height: auto;
-    width: 90%;
-    /* display: grid; */
-    text-align: center;
+/* .introduction { */
+    /* margin: 0 auto;
+    height: auto; */
+     /* background:rgba(10, 14, 13, 0.4); */
     
-    /* background:rgba(10, 14, 13, 0.4); */
-    
-}
+/* } */
 
     .introduction h1 {
         font-family: 'Allison', cursive;
@@ -220,18 +125,16 @@ a  {
         text-shadow: 0 0 7px #053636, 0 0 6px #062931;
         color: #e60532;
         display: inline-flex;
-        grid-area: 1/3/3/6;    
-        
+        /* grid-area: 1/3/3/6; */
+        /* z-index: 1; */
         /*is included in the photo fram grid section*/
+
     }/*Hello*/
 
     .introduction h2 {
         font-family: 'Allison', cursive;
         font-size: 13vw;
-        display: inline-flex;
-        /* position: relative;
-        bottom: 76vw;
-        left: 12vw; *//*these are postions not taking grid division into account*/
+        /* display: inline-flex; */
         margin: auto 0;
         color: #f0e5e4;
         text-shadow: 0 0 7px #053636, 0 0 7px #062931;
@@ -243,15 +146,13 @@ a  {
     .introduction h3 {
         font-family: 'Allison', cursive;
         font-size: 10vw;
-        /* position: relative; */
-        /* border: solid 3px blue; */
-        /* bottom: 77vw; *//*these are postions not taking grid division into account*/
         color: #051d1f;
         display: inline-flex;
-        grid-area: 6/7/7/11;
+        /* grid-area: 6/7/7/11;
         position: relative;
-        left: 0.35em;
-        /*is included in the photo fram grid section*/
+        left: 0.35em; */
+       
+
     } /*I'm Anna.*/
 
     .introduction h4 {
@@ -260,9 +161,10 @@ a  {
         font-size: 10vw;
         width: 100%;
         height: auto;
-        display: inline-block;
-        position: relative;
-        right: 1.7em;
+        /* display: inline-block; */
+        /* position: relative;
+        right: 1.7em; */
+        
     } /*located in London*/
 
     .introduction h4 span {
@@ -270,140 +172,14 @@ a  {
         text-shadow: 0 0 7px #053636, 0 0 #062931;
         font-size: 20vw;
         width: 100%;
-        display: inline-flex;
-        position: relative;
-        left: 2.7em;
-        bottom: 0.6em;
-
+        /* display: contents; */
+        
     }/*London*/
 
-
-/*BEGINNING OF THE SPECIFICALLY DESKTOP SIZE SETTINGS*/
-@media only screen and (min-width: 700px) {
-        
-    body {
-        grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(6, auto);
-    }
-
-    .header {
-        grid-area: 1/1/2/-1;
-        
-    }
-    .navbar, .nav-menu {
-        width: 100%;
-        /* border-radius: 23px; */
-        /* background: none; */
-       
-    }
-
-    .nav-item {
-        width: 100%;
-        /* border: 2px solid black; */
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    /*beginning of the introduction section*/
-    .introduction {
-        display: flex;
-        position: relative;
-        top: 9vw;
-        grid-area: 2/1/3/-1;
-    }
-        
-        .framed-image {
-            /* grid-area: 2/2/5/3; */
-            /* width: 100%;
-            height: auto; */
-            display: inline-block;
-            /* grid-auto-rows: auto; */
-            
-            /* position: relative;
-            top: 1.6em; */
-            /* place-items: center; */
-            /* grid-template-columns: repeat(12, 1fr);
-            grid-template-rows: repeat(7, 1fr); */
-        }
-
-        .image /*frame*/{
-            width: 100%;
-            height: auto;
-            /* grid-area: 1/1/13/13; */
-            /* z-index: -1; */
-            position: absolute;
-            top: 7em;
-            
-        }
-    
-        .image2 /*pontu*/{
-            width: 67%;
-            /* grid-area: 3/5/10/12; */
-            z-index: -1;
-            position: absolute;
-            
-    
-        }
-
-        .introduction h1 {
-            font-size: 10vw;
-            position: relative;
-            right: 8vw;
-        }/*Hello*/
-
-        .introduction h2 {
-            font-size: 9vw;
-            
-        }/*Front End Developer*/
-
-        .introduction h3 {
-            font-size: 7vw;
-            position: relative;
-            right: 22vw;
-            bottom: 12vw;   
-        }/*I'm Anna.*/
-
-        .introduction h4 {
-            font-size: 7vw;
-        }/*located in London*/
-
-        .introduction h4 span {
-            font-size: 15vw;
-        }
-
-    /*end of the introduction section*/
-
-    /*beginning of the about and project section*/
-    .about, .work {
-        max-width: 100vw;
-    }
-
-    .about {
-        grid-area: 3/2/4/6;
-    }
-
-    .work {
-        grid-area: 4/2/5/6;
-    } 
-    /*end of the about and project section*/
-
-
-    /*beginning of contact section*/
-    .contact {
-        max-width: 65vw;
-        height: auto;
-        grid-area: 5/2/6/6;
-    }
-    /*end of the contact section*/
-}
-
-/*END OF SPECIFICLY DESKTOP SETTINGS*/
-
-
-/* About section - general rules*/
+    /* About section - general rules*/
 
 .about, .work {
-    padding: 5% 10%;    
+   padding: 5% 10%;    
         
 }
 
@@ -412,20 +188,12 @@ a  {
 .about h3, .work h3 {
     font-family: 'Allison', cursive;
     font-size: 3.3em;
-    /* position: relative;
-    bottom: 1.3em;
-    left: 46vw; */
     z-index: 1;
     color: #252424;
     text-shadow: 0 0 7px #d6e7e7, 0 0 7px #c1cacc;
     display: inline-flex;
     
-}
-
-.about h3, .work h3 {
-    position: relative;
-    top: 5vw;
-    left: 46vw;
+    
 }
 
 .work h3 {
@@ -454,8 +222,8 @@ a  {
     /* position: relative;
     bottom: 4.6em; */
     background-color: rgba(250, 253, 253, 0.3);
-    backdrop-filter: blur(2) saturate(70%) contrast(80%) brightness(130%);
-    /*blur in backdrop filter doesn't do much. it makes the background a bit more transparent that it is without it*/
+    /* backdrop-filter: blur(2) saturate(70%) contrast(80%) brightness(130%); */
+    /*backdrop filter doesn't do much - or anything for that matter. it makes the background a bit more transparent that it is without it*/
     content: '';
     text-align:justify;  
 }
@@ -518,7 +286,7 @@ a  {
         text-shadow: 0 0 7px #053636, 0 0 7px #042830;
         width: 40%;
         height: auto;
-        border-radius: 50%;
+        border-radius: 20px;
         background: linear-gradient(to right,#363269, #23a09a);
     }
 
@@ -536,6 +304,320 @@ footer {
     height: auto;
     justify-content: center;
     display: flex;
-    grid-area: 6/1/6/-1;
+    
 }
+
+/*GENERAL RULES - ENDING*/
+
+
+/*BEGINNING OF THE MOBILE SCREEN SIZE*/
+@media only screen and (max-width: 700px) {
+    /*nav menu beginning*/
+
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -120%;
+        top: 0;
+        flex-direction: column;
+        /* background-color: darkblue; */
+        width: 60%;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 2;
+        /* box-shadow: 0 13px 32px #6c4299; */
+    }
+
+    .nav-menu.active {
+        left: 1em;
+        top: 0.4em;
+        z-index: 1;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: #f0f5f5;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #f0f5f5;
+    }
+    /*ending of the nav*/
+
+ 
+    /*beginnign of the framed picture*/
+    .framed-image {
+        width: 100%;
+        height: auto;
+        display: grid;
+        position: relative;
+        top: 1.6em;
+        /* place-items: center; */
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+           
+        
+    }
+
+    .image /*frame*/{
+        width: 100%;
+        height: auto;
+        grid-area: 1/1/13/13;
+        z-index: -1;
+    }
+
+    .image2 /*pontu*/{
+        width: 100%;
+        grid-area: 3/5/10/12;
+        z-index: -1;
+        position: relative;
+        right: 0.8vw;
+        bottom: 13.5vw;
+
+    }
+    /*ending of the framed picture*/
+
+    .introduction {
+        grid-row: 2;
+        width: 90%;
+       text-align: center;
+    }
+
+    .introduction h1 {
+        grid-area: 1/3/3/6;
+        
+    }
+
+    .introduction h3 {
+        grid-area: 6/7/7/11;
+        position: relative;
+        left: 0.35em;
+    }
+
+    .introduction h4 {
+        position: relative;
+        left: 0.3em;
+        bottom: 1.2em;
+    }
+
+    .introduction h4 span {
+        position: relative;
+        right: 0.1em;
+        top: 0.4em;
+       
+    }
+
+    .about h3, .work h3 {
+        position: relative;
+        top: 5vw;
+        left: 46vw;
+    }
+
+    footer {
+        grid-area: 6/1/6/-1;
+    }
+ 
+}
+
+/*ENDING OF THE MOBILE SCREEN SIZE */
+
+
+/*BEGINNING OF THE SPECIFICALLY DESKTOP SIZE SETTINGS*/
+@media only screen and (min-width: 700px) {
+        
+    body {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(12, auto);
+        
+    }
+    
+    
+
+    .header {
+        grid-area: 1/1/2/-1;
+        
+    }
+    .navbar, .nav-menu {
+        width: 100%;
+        /* border-radius: 23px; */
+        background: none;
+       
+    }
+
+    .nav-item {
+        width: 100%;
+        /* border: 2px solid black; */
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    a.nav-link {
+        /* position:sticky; */
+        top: 0;
+        color: black;
+        
+    }
+
+    /*beginning of the introduction section*/
+    .introduction {
+        display: block;
+        grid-area: 2/2/9/7;
+        width: 100%;
+        height: auto;
+        position: relative;
+        right: 3em;
+        bottom: 2em;
+    }
+        
+        /* .framed-image {  */
+            /* grid-area: 2/2/5/3; */
+            /* width: 100%;
+            height: auto; */
+            /* display: block; */
+            /* grid-auto-rows: auto; */
+            
+            /* position: relative;
+            top: 1.6em; */
+            /* place-items: center; */
+            /* grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(7, 1fr); */
+        /* } */
+
+        .image /*frame*/{
+            width: 100%;
+            height: auto;
+            /* display:block; */
+            
+            /* z-index: -1; */
+            position: relative;
+            bottom: 34vw;
+            
+        }
+    
+        .image2 /*pontu*/{
+            width: 60%;
+            /* grid-area: 3/5/10/12; */
+            /* z-index: -1; */
+            position: relative;
+            bottom: 4vw;
+            left: 12vw;
+    
+        }
+
+        .introduction h1 {
+            font-size: 10vw;
+            position: relative;
+            left: 7vw;
+            top: 0.7vw;
+            z-index: 1;
+        }/*Hello*/
+
+        .introduction h2 {
+            font-size: 7vw;
+            position: relative;
+            bottom: 6em;
+            left: 1em;
+            /* grid-area: 7/2/10/8; */
+            
+        }/*Front End Developer*/
+
+        .introduction h3 {
+            font-size: 5vw;
+            /* display: flex; */
+            position: relative;
+            left: 20vw;
+            bottom: 45.7vw; 
+            
+        }/*I'm Anna.*/
+
+        .introduction h4 {
+            font-size: 7vw;
+            position: relative;
+            bottom: 45vw;
+            display: block;
+            /* grid-area: 2/2/-1/-1; */
+        }/*located in London*/
+
+        .introduction h4 span {
+            font-size: 15vw;
+            display: flex;
+            position: relative;
+            bottom: 13vw;
+            left: 17vw;
+        }
+
+    /*end of the introduction section*/
+
+    /*beginning of the about and project section*/
+
+    .about h3 {
+        position: relative;
+        left: 14vw;
+        top: 3vw;
+    } 
+
+    .work h3 {
+        position: relative;
+        top: 3.5vw;
+        left: 46vw;
+        
+    }
+
+    .about, .work {
+        max-width: 100vw;
+        
+    }
+
+    .about {
+        grid-area: 2/7/7/12;
+        
+    }
+
+        
+    .container{
+        background-color: rgba(250, 253, 253, 0.7); /*background of the about me section*/
+
+    }
+
+    .work {
+        grid-area: 7/2/11/12; /*top/left/bottom/right - direction of the grid line numbers*/
+    } 
+    /*end of the about and project section*/
+
+
+    /*beginning of contact section*/
+    .contact {
+        max-width: 65vw;
+        height: auto;
+        grid-area: 11/2/-3/-1;
+    }
+    /*end of the contact section*/
+
+    footer {
+        grid-area: 12/1/-1/-1;
+    }
+}
+
+/*END OF SPECIFICLY DESKTOP SETTINGS*/
+
+
+
 
