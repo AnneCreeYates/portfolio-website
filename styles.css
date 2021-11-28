@@ -41,6 +41,8 @@ moves the about and below to the left side; it takes 50% - not whay I wanted by 
 li {
    /* display: flex;*/
    list-style: none;
+   position: relative;
+   top: 1.4em;
 }
 
 a  {
@@ -497,16 +499,17 @@ footer {
     /*nav menu beginning*/
 
     .navbar {
-        padding: 1rem 1.5rem;
+        padding: 2rem 3rem;
+        justify-content: center;
     }
     
     .nav-menu {
         position: fixed;
-        left: -120%;
-        top: 0;
+        /* left: -0; */
+        top: -120%;
         flex-direction: column;
         /* background-color: darkblue; */
-        width: 60%;
+        width: 80%;
         border-radius: 15px;
         text-align: center;
         transition: 0.3s;
@@ -515,8 +518,8 @@ footer {
     }
 
     .nav-menu.active {
-        left: 1em;
-        top: 0.4em;
+        /* left: 1em; */
+        top: 2em;
         z-index: 1;
     }
 
