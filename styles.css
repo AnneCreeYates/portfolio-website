@@ -190,7 +190,7 @@ a  {
     /* About section - general rules*/
 
 .about, .work {
-   padding: 5% 10%;    
+   padding: 5% 10%;
         
 }
 
@@ -199,7 +199,7 @@ a  {
 .about h3, .work h3 {
     font-family: 'Allison', cursive;
     font-size: 3.3em;
-    z-index: 1;
+    /* z-index: 1; */
     color: #252424;
     text-shadow: 0 0 7px #d6e7e7, 0 0 7px #c1cacc;
     display: inline-flex;
@@ -315,15 +315,15 @@ footer {
     width: 100%;
     height: auto;
     justify-content: center;
-    display: flex;
+    display: block;
     
 }
 
 /*GENERAL RULES - ENDING*/
 
 
-/*BEGINNING OF THE MOBILE SMALL SCREEN SIZE*/
-    @media only screen and (max-width: 767.98px)/*small size in Bootstrap*/ {
+/*BEGINNING OF THE MOBILE X-SMALL SCREEN SIZE*/
+    @media only screen and (max-width: 640px)/*xsmall size in Bootstrap*/ {
         /*nav menu beginning*/
 
         .navbar {
@@ -471,6 +471,7 @@ footer {
             width: 50%;
         }
 
+        
         p {
             font-size: 0.8em;
         }
@@ -490,16 +491,12 @@ footer {
     
     }
 
-/*ENDING OF THE MOBILE SMALL SCREEN SIZE */
+/*ENDING OF THE MOBILE X-SMALL SCREEN SIZE */
 
-/*BEGINNING OF THE MOBILE MEDIUM SIZE*/
+/*BEGINNING OF THE MOBILE SMALL SIZE*/
 
-@media only screen and (min-width: 767.98px)/*MEDIUM size in Bootstrap*/ {
-    /* body {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: auto;
-    } */
-    
+@media only screen and (min-width: 640px)/*MEDIUM size in Bootstrap*/ {
+       
     /*nav menu beginning*/
 
     .navbar {
@@ -700,6 +697,31 @@ footer {
 
     footer {
         grid-area: 6/1/6/-1;
+    }
+
+}
+
+/*ENDING OF THE MOBILE SMALL SIZE*/
+
+/*BEGINNING OF THE MOBILE MEDIUM SIZE*/
+
+@media only screen and (min-width: 923px)/*MEDIUM size in Bootstrap*/ {
+       
+    .work p {
+        width: 100%;
+        position: relative;
+        top: 10vw;
+        grid-area: 3/1/6/-1;
+         
+    }
+
+    
+    footer {
+        grid-area: 6/1/6/-1;
+        position: relative;
+        display: flex;
+        width: 50%;
+        justify-self: right;
     }
 
 }
