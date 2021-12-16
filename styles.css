@@ -332,7 +332,7 @@ footer {
         
         .nav-menu {
             position: fixed;
-            left: -120%;
+            left: -140%;
             top: 0;
             flex-direction: column;
             /* background-color: darkblue; */
@@ -507,7 +507,7 @@ footer {
     
     .nav-menu {
         position: fixed;
-        top: -120%;
+        top: -140%;
         flex-direction: column;
         width: 80%;
         border-radius: 15px;
@@ -667,7 +667,7 @@ footer {
 
     .about h3 {
         position: relative;
-        left: 12vw;
+        left: 7vw;
         top: 3vw;
     }
 
@@ -682,7 +682,7 @@ footer {
     .work h3 {
         position: relative;
         top: 2.6vw;
-        left: 13vw;
+        left: 18vw;
 
     }
 
@@ -706,7 +706,19 @@ footer {
 /*BEGINNING OF THE MOBILE MEDIUM SIZE*/
 
 @media only screen and (min-width: 923px)/*MEDIUM size in Bootstrap*/ {
-       
+    
+    .work h3 {
+        position: relative;
+        top: 13vw;
+        left: 24vw;
+        z-index: 1;
+    }
+
+    .about h3 {
+        position: relative;
+        left: 10vw;
+    }
+
     .work p {
         width: 100%;
         position: relative;
@@ -731,37 +743,49 @@ footer {
 
 /*BEGINNING OF THE SPECIFICALLY DESKTOP SIZE SETTINGS*/
         @media only screen and (min-width: 1199.98px) {
-                
+            
+            html {
+                width: 70%;
+                height: auto;
+                position: relative;
+                                
+            }
+            
+            
             body {
                 grid-template-columns: repeat(12, 1fr);
                 grid-template-rows: repeat(12, auto);
                 
-            }
-            
-            
-
-            .header {
-                grid-area: 1/1/2/-1;
                 
             }
-            .navbar, .nav-menu {
+                       
+
+            .nav-menu {
                 width: 100%;
                 /* border-radius: 23px; */
                 background: none;
+                
             
             }
 
             .nav-item {
-                width: 100%;
-                /* border: 2px solid black; */
+                width: content;
+                display: block;
                 margin: 0 auto;
-                text-align: center;
+                position: relative;
+                left: 20px;
+                
             }
 
             a.nav-link {
-                /* position:sticky; */
+                position:sticky;
                 top: 0;
                 color: black;
+                
+            }
+
+            .hamburger{
+                display: none;
                 
             }
 
