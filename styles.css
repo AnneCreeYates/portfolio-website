@@ -28,14 +28,16 @@ html {
 } /*
 moves the about and below to the left side; it takes 50% - not whay I wanted by interesting outcome. May look into options*/
 
-li {
+.nav-menu li {
    /* display: flex;*/
    list-style: none;
    /* position: relative;
    top: 1.4em; */
 }
 
-a  {
+
+
+.header a {
     text-decoration: none;
     font-family: 'Allison', cursive;
 }
@@ -78,7 +80,7 @@ a  {
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 5em;
 }
 
 .nav-link {
@@ -193,13 +195,17 @@ a  {
     border: 1px solid rgba(10, 14, 13, 0.4);
     border-radius: 15px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
-    font-size: 1.3rem;
-    height: auto;
+    /* font-size: 1.3rem;
+    height: auto;*/
     /* overflow: hidden; - it only refers to  the contact form h3 thig; if it is on the text is overflowing and therefore hidden*/
     padding: 1.3em;
     background-color: rgba(250, 253, 253, 0.3);
     content: '';
     text-align:justify;  
+}
+
+.about p {
+    font-size: 1.1em;
 }
 
 .work p span {
@@ -219,12 +225,20 @@ a  {
     
 }
 
+.container li {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 0.5em;
+    /* margin-bottom: 0.2em; */
+    
+}
+
 .contact {
     margin: 10%;
     width: 80%;
     height: auto;
     text-align: center;
-       
+    font-size: 1.3rem;   
 }
 
     .form-controller {
@@ -256,15 +270,22 @@ a  {
         background: linear-gradient(to right,#c00635, #0d6699);
     }
 
-.references, a {
-    font-size: 1.2em;
+.references, .header a {
+    /* font-size: 1.2em; */
     text-align: center;
     color: ivory;
     position: relative;
     bottom: 3vw;
-    line-height: 7vw;
+    /* line-height: 7vw; */
 }
 
+.references, .references a {
+    font-family: 'Allison', cursive;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+
+}
 footer {
     width: 100%;
     height: auto;
@@ -402,9 +423,10 @@ footer {
         }
 
         
-        p {
+        /* p {
             font-size: 0.8em;
-        }
+        } */
+
         .work p {
             font-size: 1.1em;
         }
@@ -574,6 +596,7 @@ footer {
     p {
         font-size: 1em;
     }
+
     .work p {
         font-size: 1.2em;
     }
@@ -589,7 +612,7 @@ footer {
         position: relative;
         right: 5vw;
         top: 12vw;
-        grid-area: 3/1/6/-1;
+        grid-area: 3/1/5/-1;
     }
 
     .work h3 {
@@ -688,7 +711,7 @@ footer {
                 
     }
 
-    .nav-link {
+    .nav-link, .header a  {
         color: black;
         font-size: 2.8vw;
         line-height: 4vw;
@@ -793,14 +816,13 @@ footer {
        left: 6em;
        top: 0.7em;
        font-size: 2.8vw;
-    }
 
-    p, .work p {
+    }
+    
+
+    .about p, .work p, .container li {
         font-size: 1vw;
-    }
 
-    .work p {
-        background-color: rgba(250, 253, 253, 0.65);
     }
 
     .container {
@@ -828,6 +850,10 @@ footer {
         top: -13vw;
         left: -2vw;
         
+    }
+    
+    .work p {
+        background-color: rgba(250, 253, 253, 0.65);
     }
 
     .work h3 {
