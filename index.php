@@ -12,7 +12,11 @@
     </head>
     
     <body>
-            
+      
+      <?php 
+        include("form-to-email.php");
+      ?>
+
       <header class = "header">
         <nav id="navbar" class="navbar">
             <!-- <a href="#" class="nav-logo">Anne Cree Yates</a> -->
@@ -105,7 +109,7 @@
               <h3>Let's get in touch!</h3>
 
               <div class = "contact-form">
-                  <form id = "contact-form" method = "post" acxtion = "">
+                  <form id = "contact-form" method = "post" action = "" name = "formToEmail">
                       <input name = "name" type = "text" class = "form-controller" placeholder = "Your name" required>
                       <br>
                       <input name = "email" type = "email" class = "form-controller" placeholder = "Your email" required>
