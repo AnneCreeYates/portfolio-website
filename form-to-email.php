@@ -6,6 +6,7 @@ $errorMessage = '';
 if (!empty($_POST)) {
     $name = $_POST['name'];
     $email = $_POST['email'];
+    $subject = $_POST['subject']; //added by me to try to give an option for input of the subject
     $message = $_POST['message'];
 
     if (empty($name)) {
@@ -25,14 +26,14 @@ if (!empty($_POST)) {
 
     if (empty($errors)) {
         $toEmail = 'anna@annecreeyates.com';
-        $emailSubject = 'New email from your contant form';
+        // $emailSubject = 'New email from your contant form';
         $headers = ['From' => $email, 'Reply-To' => $email, 'Content-type' => 'text/html; charset=iso-8859-1'];
 
-        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Message:", $message];
+        $bodyParagraphs = ["Name: {$name}", "Email: {$email}", "Subject: {$subject}", "Message: {$message}"];
         $body = join(PHP_EOL, $bodyParagraphs);
 
-        if (mail($toEmail, $emailSubject, $body, $headers)) {
-            header('Location: thank-you.html');
+        if (mail($toEmail, $subject, $body, $headers)) {
+            header('Location: thank_you.php');
         } else {
             $errorMessage = 'Oops, something went wrong. Please try again later';
         }
@@ -41,6 +42,8 @@ if (!empty($_POST)) {
         $errorMessage = "<p style='color: red;'>{$allErrors}</p>";
     }
 }
+
+//code from mailtrap.io
 
 ?>
 

@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href = "styles.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Allison&family=Palette+Mosaic&display=swap" rel="stylesheet">
         <title>
             Anne C. Yates Portfolio
@@ -70,7 +71,7 @@
           <br>
           <p>
             If you wish to find out more here is the longer version. 
-            If you have any questions go ahead and <a href=#contact class = "contact-link"> get in touch</a>. 
+            If you have any questions go ahead and <br><a href=#contact class = "contact-link"> get in touch.</a> 
           </p>
             
          
@@ -109,14 +110,17 @@
               <h3>Let's get in touch!</h3>
 
               <div class = "contact-form">
-                  <form id = "contact-form" method = "post" action = "" name = "formToEmail">
+                  <form id = "contact-form" method = "post" action = "/form-to-email.php" name = "formToEmail">
+
+                  <?php echo((!empty($errorMessage)) ? $errorMessage : '') ?>
+                  
                       <input name = "name" type = "text" class = "form-controller" placeholder = "Your name" required>
                       <br>
                       <input name = "email" type = "email" class = "form-controller" placeholder = "Your email" required>
                       <br>
-
-                      <textarea name = "message" class = "form-controller, message" placeholder = "Your message" required>
-                      </textarea>
+                      <input name = "subject" type = "text" class = "form-controller" id = "subject" placeholder = "Subject" required>
+                      <br>
+                      <textarea name = "message" class = "form-controller, message" placeholder = "Your message" required></textarea>
                       <br>
 
                       <input type = "submit" class = "form-controller-submit" value = "Send">
@@ -135,6 +139,14 @@
             <br>
             <a href='https://pngtree.com/so/polaroid'>polaroid png from pngtree.com/</a>
         </p>
+
+        <ul class="fa">
+        <li><a href="#" class="fa fa-facebook"></a></li>
+        <li><a href="#" class="fa fa-twitter"></a></li>    
+        <li><a href="#" class="fa fa-linkedin"></a></li> 
+        <li><a href="#" class="fa fa-skype"></a></li>
+        </ul>
+        <!--add discord-->
     </footer>
     <script type="text/javascript" src="main.js"></script>
 </html>

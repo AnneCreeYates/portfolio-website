@@ -15,3 +15,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
+
+
+//mail validation funtion
+
