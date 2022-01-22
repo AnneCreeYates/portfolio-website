@@ -322,6 +322,14 @@ a {
     text-decoration: none;
 }
 
+footer li {
+    display: inline-flex;
+    
+}
+
+footer ul {
+    text-align: center;
+}
 
 .fa {  
     padding: 20px;  
@@ -333,24 +341,24 @@ a {
   }
 
   .fa-facebook {  
-    background: #3B5998;  
+    /* background: #3B5998;   */
     color: white;  
   }  
   .fa-twitter {  
-    background: #55ACEE;  
+    /* background: #55ACEE;   */
     color: white;  
   }  
   .fa-linkedin {  
-    background: #007bb5;  
+    /* background: #007bb5;   */
     color: white;  
   }  
    
   .fa-skype {  
-    background: #00aff0;  
+    /* background: #00aff0;   */
     color: white;  
   }  
   .fa:hover {  
-      opacity: 0.9;  
+      color: red;  
   }
 
 /*GENERAL RULES - ENDING*/

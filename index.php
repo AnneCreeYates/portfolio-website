@@ -134,19 +134,20 @@
     
     </body>
     <footer>
-        <p class = "references">
-            Resources:
-            <br>
-            <a href='https://pngtree.com/so/polaroid'>polaroid png from pngtree.com/</a>
-        </p>
-
-        <ul class="fa">
+        
+        <ul>
         <li><a href="#" class="fa fa-facebook"></a></li>
         <li><a href="#" class="fa fa-twitter"></a></li>    
         <li><a href="#" class="fa fa-linkedin"></a></li> 
         <li><a href="#" class="fa fa-skype"></a></li>
         </ul>
-        <!--add discord-->
+
+        <p class = "references">
+            Resources:
+            <br>
+            <a href='https://pngtree.com/so/polaroid'>polaroid png from pngtree.com/</a>
+        </p>
+        
     </footer>
     <script type="text/javascript" src="main.js"></script>
 </html>
