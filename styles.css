@@ -12,16 +12,32 @@ body {
     /* background-image: url(../imgs/London-Skyline2.png); */
     background-size: contain;
     background-repeat: no-repeat;
-    
+    display: inline-grid; /*may be necessary for making the grid layout*/
+    /* grid-template-columns: 100%; */
+    /* grid-template-rows: auto;check if there is any better option to make the row fit the content */
+    gap: 23px;
+      
 }
 
+html {
+    /* border: 3px solid yellow; */
+    /* background: rgb(150, 94, 9); */
+    width: 100%;
+    height: auto;
+    
+} /*
+moves the about and below to the left side; it takes 50% - not whay I wanted by interesting outcome. May look into options*/
 
-li {
+.nav-menu li {
    /* display: flex;*/
    list-style: none;
+   /* position: relative;
+   top: 1.4em; */
 }
 
-a  {
+
+
+.header a {
     text-decoration: none;
     font-family: 'Allison', cursive;
 }
@@ -36,7 +52,7 @@ a  {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 1.5rem;
+    z-index: 1;
     
 }
 
@@ -58,13 +74,13 @@ a  {
 
 .nav-menu {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    /* justify-content: space-between; */
+    /* align-items: center; */
     background-image: linear-gradient(to right,#363269, #23a09a);
 }
 
 .nav-item {
-    margin-left: 5rem;
+    margin-left: 5em;
 }
 
 .nav-link {
@@ -77,185 +93,89 @@ a  {
 /* nav link hover doesn't work as intended - it only shows after clicking*/
 .nav-link:hover {
     color:#062931;
-    text-shadow: 7px 15px 0 #f8f5f4, 12px 34px 0 #f51303;
+    text-shadow: 12px 14px #06567a;
     
     /*in the full size website move the nav links to the middle of the buildings - will look better*/
 }
 
-/* .nav-logo {
-    font-size: 2.1rem;
-    font-weight: 500;
-    color: #482ff7;
-} */
 
-@media only screen and (max-width: 700px) {
-    /*nav menu beginning*/
-    .nav-menu {
-        position: fixed;
-        left: -120%;
-        top: 0;
-        flex-direction: column;
-        /* background-color: darkblue; */
-        width: 60%;
-        border-radius: 15px;
-        text-align: center;
-        transition: 0.3s;
-        z-index: 2;
-        /* box-shadow: 0 13px 32px #6c4299; */
-    }
+/*GENERAL RULES - BEGINNING*/
+/*placeholder image of pontu - a image link of the project goes here*/
+.project-image {
+    width: 100%;
+    height: auto;
+    padding: 5%;
+}
 
-    .nav-menu.active {
-        left: 1em;
-        top: 0.4em;
-        z-index: 1;
-    }
-
-    .nav-item {
-        margin: 2.5rem 0;
-    }
-
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
-
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-        background-color: #f0f5f5;
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-        background-color: #f0f5f5;
-    }
-    /*ending of the nav*/
-
-}  
-/*introduction  -- work on the flexible positioning of the introduction elements, so not much editig is necessary for bigger screen*/
-
-.introduction {
+/* .introduction {
     margin: 0 auto;
     height: auto;
-    width: 90%;
-    /* background:rgba(10, 14, 13, 0.4); */
+    background:rgba(10, 14, 13, 0.4);
     
-}
+} */
 
     .introduction h1 {
         font-family: 'Allison', cursive;
-        font-size: 19vw;
-        text-shadow: 0 0 7px #053636, 0 0 6px #062931;
+        font-size: 17vw;
+        text-shadow: 0 0 12px #053636, 0 0 7px #062931;
         color: #e60532;
-        padding: 8%;
-        position: relative;
-        bottom: 0.23vw;
-        display: inline-grid;
+        display: inline-flex;
+        
+
     }/*Hello*/
 
     .introduction h2 {
         font-family: 'Allison', cursive;
         font-size: 13vw;
-        display: inline-flex;
-        position: relative;
-        bottom: 6vw;
-        left: 12vw;
         margin: auto 0;
         color: #f0e5e4;
         text-shadow: 0 0 7px #053636, 0 0 7px #062931;
-        display: inline-grid;
+                
     } /*Front End Developer*/
 
     .introduction h3 {
         font-family: 'Allison', cursive;
         font-size: 10vw;
-        position: relative;
-        /* border: solid 3px blue; */
-        bottom: -1.9vw;
-        left: 3.7vw;
-        color: #f1e8e8;
-        display: inline-grid;
+        color: #0f1c1d;
+        display: inline-flex;
+        text-shadow: 0 0 7px #053636, 0 0 12px #062931;
+        
     } /*I'm Anna.*/
 
     .introduction h4 {
         color: #f1e8e8;
         font-family: 'Allison', cursive;
-        font-size: 11vw;
-        position: relative;
-        bottom: 2.6vw;
-        left: 12vw;
-        /* border: 3px solid lemonchiffon; */
-        width: fit-content;
+        font-size: 10vw;
+        width: 100%;
         height: auto;
-        display: inline-grid;
+        
+        
     } /*located in London*/
 
     .introduction h4 span {
         color: #e60532;
-        text-shadow: 0 0 7px #053636, 0 0 px #062931;
-        font-size: 18vw;
-        width: fit-content;
-        display: inline-grid;
-        position: relative;
-        bottom: 18vw;
-        left: 29vw;
+        text-shadow: 0 0 7px #053636, 0 0 #062931;
+        font-size: 20vw;
+        width: 100%;
+                
+    }/*London*/
 
-    }
+    /* About section - general rules*/
 
-@media only screen and (min-width: 700px) {
-
-    body {
-        width: 60%;
-    } /*moves the about and below to the left side; it takes 50% - not whay I wanted by interesting outcome. May look into options*/
-
-    /*beginning of the introduction section*/
-    .introduction h1 {
-        font-size: 10vw;
-    }
-
-    .introduction h2 {
-        font-size: 9vw;
-    }
-
-    .introduction h3 {
-        font-size: 7vw;
-    }
-
-    .introduction h4 {
-        font-size: 7vw;
-    }
-
-    .introduction h4 span {
-        font-size: 15vw;
-    }
-
-    /*end of the introduction section*/
-}
-
-/* About section*/
-
-.about, .work, .contact {
-    padding: 8%;
-    position: relative;
-    top: -1em;
+.about, .work {
+   padding: 5% 10%;
         
 }
 
 .about h3, .work h3 {
     font-family: 'Allison', cursive;
     font-size: 3.3em;
-    position: relative;
-    bottom: 1.3em;
-    left: 46vw;
-    z-index: 1;
     color: #252424;
     text-shadow: 0 0 7px #d6e7e7, 0 0 7px #c1cacc;
-    display: inline-grid;
-    
+    display: inline-flex;
+     
 }
+
 .work h3 {
     margin: auto -1em;
 }
@@ -275,17 +195,27 @@ a  {
     border: 1px solid rgba(10, 14, 13, 0.4);
     border-radius: 15px;
     box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.4);
-    font-size: 1.3rem;
-    height: auto;
+    /* font-size: 1.3rem;
+    height: auto;*/
     /* overflow: hidden; - it only refers to  the contact form h3 thig; if it is on the text is overflowing and therefore hidden*/
     padding: 1.3em;
-    position: relative;
-    bottom: 4.6em;
     background-color: rgba(250, 253, 253, 0.3);
-    backdrop-filter: blur(2) saturate(70%) contrast(80%) brightness(130%);
-    /*blur in backdrop filter doesn't do much. it makes the background a bit more transparent that it is without it*/
     content: '';
-        
+    text-align:justify;  
+}
+
+.contact-link {
+    color: white;
+    font-family: 'Allison', cursive;
+    font-size: 45px;
+    text-decoration: none;
+    line-height: 0.3em;
+    text-align: center;
+}
+/*looks good in mobile, but text looks stupid in bigger sizes*/ 
+
+.about p {
+    font-size: 1.1em;
 }
 
 .work p span {
@@ -293,48 +223,61 @@ a  {
     font-size:  1.9em;
     text-shadow: 0 0 3px #053636, 0 0 6px #062931;
     color: #f8f4f5;
-    position: relative;
-    bottom: 0.4em;
-    display: inline-grid;
-   
+    display: inline-flex;
+    text-align: center;
 }
 
 .about p, .form-controller {
     color: #252424;
-    /* color: rgb(52, 52, 53); */
     z-index: 2;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 500;
     
 }
 
-.contact {
-    margin: 0 auto 2em;
-    width: 90%;
-    text-align: center;
-    position: relative;
-    top: 0.2em;
+.container li {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-top: 0.5em;
+    /* margin-bottom: 0.2em; */
     
 }
 
+.contact {
+    margin: 10%;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    font-size: 1.3rem;   
+}
+
     .form-controller {
-        font-size: 0.9em;
-        padding: 1em 0 0.6em 0;
+        font-size: 0.8em;
+        line-height: 2;
         width: 100%;
-        position: relative;
-        bottom: 2em;
         text-align: center;
         margin: 0.2em auto;
         border-radius: 12px;
     }
 
+    #subject{
+       text-align: left;
+       padding: 0 1em;
+    }
+
     .message {
         height: 150px;
         width: 100%;
-        font-size: 0.9em;
-        text-align: start;
-        padding: 0.6em;
+        font-size: 0.7em;
+        text-align:justify;
         border-radius: 12px;
+        
+    }
+
+
+    textarea {
+        padding: 1em;
+        
     }
 
     .form-controller-submit {
@@ -343,13 +286,670 @@ a  {
         font-size: 2em;
         color: #faf5f6;
         font-family: 'Allison', cursive;
-        text-shadow: 0 0 7px #053636, 0 0 7px #042830;
         width: 40%;
         height: auto;
-        border-radius: 50%;
-        background: linear-gradient(to right,#363269, #23a09a);
+        border-radius: 20px;
+        background: linear-gradient(to right,#c00635, #0d6699);
     }
 
+.references, .header a {
+    /* font-size: 1.2em; */
+    text-align: center;
+    color: ivory;
+    position: relative;
+    bottom: 3vw;
+    /* line-height: 7vw; */
+}
+
+.references, .references a {
+    font-family: 'Allison', cursive;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+
+}
+footer {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    display: block;
+    
+}
+
+/*this is for a try-out purpose only - I want to make it white outline*/
+
+a {
+    text-decoration: none;
+}
+
+footer li {
+    display: inline-flex;
+    
+}
+
+footer ul {
+    text-align: center;
+}
+
+.fa {  
+    padding: 20px;  
+    text-align: center;  
+    margin: 5px 2px;  
+    font-size: 30px;  
+    width: 50px;
+        
+  }
+
+  .fa-facebook {  
+    /* background: #3B5998;   */
+    color: white;  
+  }  
+  .fa-twitter {  
+    /* background: #55ACEE;   */
+    color: white;  
+  }  
+  .fa-linkedin {  
+    /* background: #007bb5;   */
+    color: white;  
+  }  
+   
+  .fa-skype {  
+    /* background: #00aff0;   */
+    color: white;  
+  }  
+  .fa:hover {  
+      color: red;  
+  }
+
+/*GENERAL RULES - ENDING*/
 
 
+/*BEGINNING OF THE MOBILE X-SMALL SCREEN SIZE*/
+    @media only screen and (max-width: 640px)/*xsmall size in Bootstrap*/ {
+        /*nav menu beginning*/
 
+        .navbar {
+            padding: 1rem 1.5rem;
+        }
+        
+        .nav-menu {
+            position: fixed;
+            left: -140%;
+            top: 0;
+            flex-direction: column;
+            width: 60%;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+            z-index: 2;
+            
+        }
+
+        .nav-menu.active {
+            left: 1em;
+            top: 0.4em;
+            z-index: 1;
+        }
+
+        .nav-item {
+            margin: 2.5rem 0;
+        }
+
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+            background-color: #f0f5f5;
+        }
+
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+            background-color: #f0f5f5;
+        }
+        /*ending of the nav*/
+
+    
+        .image /*frame*/{
+            width: 76%;
+            height: auto;
+            display: inline-flex;
+            position: absolute;
+            right: 27vw;
+            top: 5vw;     
+            z-index: -1;
+            
+        }
+
+        .image2 /*pontu*/{
+            width: 45%;
+            display: flex;
+            z-index: -2;
+            position: absolute;
+            right: 33vw;
+            bottom: 29vw;
+                       
+
+        }
+        /*ending of the framed picture*/
+
+        .introduction {
+            width: 80%;
+            height: auto;
+            display: block;
+            position: relative;
+            justify-self: center;
+            
+        } /*contains the entire introduction *h's and pictures*/
+
+        .introduction h1 {
+            display:inline-flex;
+            position: relative;
+            left: 20vw;
+            bottom: 2vw;
+        } /*Hello*/
+
+        .introduction h2 {
+            position: relative;
+            left: 54vw;
+            width: 30%;
+            height: auto;
+            display: inline-flex;
+            line-height: 0.8;
+
+        } /*Front End Developer*/
+
+        .introduction h3 {
+            position: relative;
+            right: 6vw;
+            top: 40vw;
+            font-size: 8vw;
+            display:inline-flex;
+        } /*I'm Anna.*/
+
+        .introduction h4 {
+            position: relative;
+            left: 14vw;
+            top: 6vw;
+            display: inline-flex;
+            width: auto;
+            
+        } /*located in London*/
+
+        .introduction h4 span {
+            position: relative;
+            bottom: 3vw;
+            display: inline-flex;
+            width: 50%;
+        }
+
+        
+        /* p {
+            font-size: 0.8em;
+        } */
+
+        .work p {
+            font-size: 1.1em;
+        }
+
+        .about h3, .work h3 {
+            position: relative;
+            top: 5vw;
+            left: 46vw;
+        }
+
+        footer {
+            grid-area: 6/1/6/-1;
+        }
+    
+    }
+
+/*ENDING OF THE MOBILE X-SMALL SCREEN SIZE */
+
+/*BEGINNING OF THE MOBILE SMALL SIZE*/
+
+@media only screen and (min-width: 640px)/*MEDIUM size in Bootstrap*/ {
+       
+    /*nav menu beginning*/
+
+    .navbar {
+        padding: 2rem 3rem;
+        justify-content: center;
+        position: sticky;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: -140%;
+        flex-direction: column;
+        width: 80%;
+        border-radius: 15px;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 2;
+        
+    }
+
+    .nav-menu.active {
+        top: 2em;
+        z-index: 1;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+        background-color: #f0f5f5;
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+        background-color: #f0f5f5;
+    }
+    /*ending of the nav*/
+
+
+    .image /*frame*/{
+        width: 60%;
+        height: auto;
+        display: inline-flex;
+        position: absolute;
+        right: 23vw;
+        top: 12vw;     
+        z-index: -1;
+        
+    }
+
+    .image2 /*pontu*/{
+        width: 36%;
+        display: inline-flex;
+        grid-row: 2;
+        z-index: -2;
+        position: absolute;
+        top: 16.5vw;
+        right: 26.5vw;
+                   
+
+    }
+    /*ending of the framed picture*/
+
+    .introduction {
+        grid-area: 2/1/4/2;
+        width: 60%;
+        height: auto;
+        display: block;
+        position: relative;
+        bottom: 5vw;
+    } /*contains the entire introduction *h's and pictures*/
+
+    .introduction h1 {
+        display:inline-flex;
+        position: relative;
+        left: 9vw;
+        top: 9vw;
+        font-size: 10vw;
+        
+    } /*Hello*/
+
+    .introduction h2 {
+        position: relative;
+        left: 35vw;
+        top: 5vw;
+        width: 30%;
+        height: auto;
+        display: inline-flex;
+        line-height: 0.8;
+        font-size: 8vw;
+
+    } /*Front End Developer*/
+
+    .introduction h3 {
+        position: relative;
+        left: 5vw;
+        top: 33vw;
+        font-size: 4vw;
+        display:inline-flex;
+    } /*I'm Anna.*/
+
+    .introduction h4 {
+        position: relative;
+        left: 12vw;
+        top: 12vw;
+        display: flex;
+        font-size: 6vw;
+        
+    } /*located in London*/
+
+    .introduction h4 span {
+        position: relative;
+        bottom: 2vw;
+        display: inline-flex;
+        width: 50%;
+        font-size: 13vw;
+    }
+
+    .container {
+        background:rgba(250, 253, 253, 0.7);
+        
+    }
+
+    .about {
+        width: 35%;
+        justify-self: end;
+        position: relative;
+        right: 6vw;
+        grid-area: 2/1/4/2;
+        padding: 4vw;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .work p {
+        font-size: 1.2em;
+    }
+
+    .about h3 {
+        position: relative;
+        left: 7vw;
+        top: 3vw;
+    }
+
+    .work {
+        width: 60%;
+        position: relative;
+        right: 5vw;
+        top: 12vw;
+        grid-area: 3/1/5/-1;
+    }
+
+    .work h3 {
+        position: relative;
+        top: 2.6vw;
+        left: 18vw;
+
+    }
+
+    .contact {
+        width: 40%;
+        grid-area: 4/1/6/-1;
+        position: relative;
+        left: 43vw;
+        top: 4vw;
+        height: fit-content;
+    }
+
+    footer {
+        grid-area: 6/1/6/-1;
+    }
+
+}
+
+/*ENDING OF THE MOBILE SMALL SIZE*/
+
+/*BEGINNING OF THE MOBILE MEDIUM SIZE*/
+
+@media only screen and (min-width: 923px) /*MEDIUM size in Bootstrap*/ {
+    
+    .work h3 {
+        position: relative;
+        top: 13vw;
+        left: 24vw;
+        z-index: 1;
+    }
+
+    .about h3 {
+        position: relative;
+        left: 10vw;
+    }
+
+    .work p {
+        width: 100%;
+        position: relative;
+        top: 10vw;
+        grid-area: 3/1/6/-1;
+         
+    }
+
+    
+    footer {
+        grid-area: 6/1/6/-1;
+        position: relative;
+        display: flex;
+        width: 50%;
+        justify-self: right;
+    }
+
+}
+
+/*ENDING OF THE MOBILE MEDIUM SIZE*/
+
+
+/*BEGINNING OF THE SPECIFICALLY DESKTOP SIZE SETTINGS*/
+    @media only screen and (min-width: 1199.98px) {
+
+            
+    html {
+        width: 70%;
+        height: auto;
+        position: relative;
+        left: 15%;
+                              
+    }
+            
+            
+    body {
+        /*background-position-y: -8vw;*//*figure out how to stretch the backgreound to the bottom; at the moment there is white space*/
+        
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 390px 1fr min-content;        
+    }
+    
+    
+    .nav-menu {
+        width: 100%;
+        position: relative;
+        top: 0;
+        height:100%;
+        background: none;
+    }
+
+    .nav-item {
+        margin: 0 auto;
+                
+    }
+
+    .nav-link, .header a  {
+        color: black;
+        font-size: 2.8vw;
+        line-height: 4vw;
+        position: relative;
+        top: 0.09vh;              
+    }
+
+   .hamburger {
+       display: none;
+   }
+    /*beginning of the introduction section*/
+    .introduction {
+        display: block;
+        grid-area: 1/2/2/-1;
+        width: 100%;
+        height: auto;
+        justify-content: center;        
+    }
+
+    .framed-image {
+        position: relative;
+        text-align: center;
+        left: 3em;
+    }
+                
+    .image /*frame*/{
+        width: 30%;
+        height: auto;
+        position: relative;
+        right: 10vw;
+        top: 8vw;        
+    }
+            
+    .image2 /*pontu*/{
+        width: 18%;
+        position: relative;
+        top: 3.5vw;
+        left: -21.3vw;
+    }
+
+    .introduction h1 {
+        font-size: 5vw;
+        position: relative;
+        top: -6vw;
+        left: -2.6vw;
+                    
+    }/*Hello*/
+
+    .introduction h3 {
+        font-size: 2vw;
+        position: relative;
+        left: -28vw;
+        top: 5.5vw;
+        text-shadow: none;
+    }/*I'm Anna.*/
+
+
+    .introduction h2 {
+        font-size: 4vw;
+        position: relative;
+        left: 26vw;
+        top: -7vw;
+        width: 100%;
+        color: black;
+        text-shadow: none;
+
+    }/*Front End Developer*/
+
+    
+    .introduction h4 {
+        font-size: 3vw;
+        position: relative;
+        top: -6.5vw;
+        left: 26vw;
+        color: black;
+    }/*located in London*/
+
+    .introduction h4 span {
+        font-size: 6vw;
+        position: relative;
+        top: -0.2em;
+        right: -0.2em;
+        
+    }
+
+    /*end of the introduction section*/
+
+    /*beginning of the about and project section*/
+
+    .about {
+       width: 100%;
+       display:block;
+       grid-area: 2/1/4/3;
+       position: relative;
+       bottom: 8vw;
+       left: 2vw;
+       
+    }
+
+    .about h3 {
+       position: relative;
+       left: 6em;
+       top: 0.7em;
+       font-size: 2.8vw;
+
+    }
+    
+
+    .about p, .work p, .container li {
+        font-size: 1vw;
+
+    }
+
+    .container {
+        background-color: rgba(250, 253, 253, 0.7); /*background of the about me section*/
+        
+    } /*container of the About section*/
+
+            
+ /*end of the about and project section*/
+
+
+    /*beginning of contact section*/
+    .contact {
+        grid-row-start: 3;
+        grid-row-end: 5;
+        position: relative;
+        left: -2vw;
+    }
+    /*end of the contact section*/
+
+    .work {
+        grid-area: 2/3/5/-1;
+        width: 100%;
+        position: relative;
+        top: -13vw;
+        left: -2vw;
+        
+    }
+    
+    .work p {
+        background-color: rgba(250, 253, 253, 0.65);
+    }
+
+    .work h3 {
+        position: relative;
+        left: 6em;
+        top: 4.3em;
+        font-size: 2.8vw;
+    }
+   
+    .project-image {
+        padding: 2vw;
+        position: relative;
+        top: 2vw;
+    }
+
+    .contact {
+        margin: 12.58%;
+        width: 35%;
+    }
+
+    .contact h3 {
+        font-size: 3.5vw;
+    }
+
+    footer {
+        grid-row-start: 5;
+        justify-self: center;
+        
+    }
+}
+
+/*END OF SPECIFICLY DESKTOP SETTINGS*/
