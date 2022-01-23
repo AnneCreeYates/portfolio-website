@@ -136,11 +136,11 @@
     <footer>
         
         <ul>
-        <li><a href="#" class="fa fa-facebook"></a></li>
-        <li><a href="#" class="fa fa-twitter"></a></li>    
-        <li><a href="#" class="fa fa-linkedin"></a></li> 
-        <li><a href="#" class="fa fa-skype"></a></li>
+        <li><a href="https://www.facebook.com/annecreeyates" target = _blank class="fa fa-facebook"></a></li>
+        <li><a href="https://twitter.com/CreeYates" target = _blank class="fa fa-twitter"></a></li>    
+        <li><a href="https://www.linkedin.com/in/annawrzosek/" target = _blank class="fa fa-linkedin"></a></li> 
         </ul>
+        <!--think if you want to add some other social media later-->
 
         <p class = "references">
             Resources:
