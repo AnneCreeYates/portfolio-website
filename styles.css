@@ -75,7 +75,6 @@ moves the about and below to the left side; it takes 50% - not whay I wanted by 
 .nav-menu {
     display: flex;
     /* justify-content: space-between; */
-    /* align-items: center; */
     background-image: linear-gradient(to right,#363269, #23a09a);
 }
 
