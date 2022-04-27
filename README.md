@@ -7,4 +7,6 @@ Techonlogies used so far: CSS, HTML, JavaScript, git and  GitHub, elements of PH
 Intended as a vanilla project.
 21/08/2021 - so far there is a hamburger manu done
 
+<!-- this is to make a commit to check if pull request and mergin workeds -->
+
 
