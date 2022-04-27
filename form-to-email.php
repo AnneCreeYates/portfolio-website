@@ -43,7 +43,7 @@ if (!empty($_POST)) {
     }
 }
 
-//code from mailtrap.io
+//code based on mailtrap.io
 
 ?>
 
