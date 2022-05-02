@@ -17,5 +17,5 @@ function closeMenu() {
 
 
 
-//mail validation funtion
+//mail validation function
 
