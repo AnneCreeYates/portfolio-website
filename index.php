@@ -98,8 +98,8 @@
           Itaque eos, explicabo odio quis ipsa, neque modi et voluptate voluptatibus assumenda
           molestiae similique, doloremque veritatis laborum omnis dignissimos reiciendis
           atque maxime!
-          <a href=" " target="_blank">
-            <img class = work__project-image src="imgs/pontu.gif" alt=""/>
+          <a href="http://solicitor-southkensington.rf.gd" target="_blank">
+            <img class = work__project-image src="imgs\the-shard-london-skyline.jpg" width = "300" height = "300" alt="black and white London skyline featuring the Shard"/>
             <!--the jpg with the first glance of the website goes here-->
           </a>
         </p>

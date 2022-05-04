@@ -2,13 +2,27 @@
 @use 'fonts';
 
 .main-nav {
-    display: grid;
-    font-family: fonts.$primary-text-font;
+    position: absolute;
+    display: flex;
+    width: fit-content;
+    height: min-content;
+    font-size: fonts.$primary-font-size;
+    // margin: 2em;
+
+    font-family: fonts.$primary-font;
     background-color: colors.$secondary-clr;
     a {
         color: colors.$primary-clr;
+        text-decoration: none;
+        
+        
         &:hover {
             color: yellow;
         }
+    }
+
+    li {
+        list-style: none;
+        margin: 2em;
     }
 }
