@@ -6,3 +6,27 @@
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+
+body {
+  background-color: rgb(100, 3, 180);
+}
+
+li {
+  color: rgb(16, 248, 159);
+}
+
+a {
+  color: rgb(59, 226, 37);
+}
+
+.main-nav {
+  display: grid;
+  font-family: "Jost", sans-serif;
+  background-color: rgb(16, 248, 159);
+}
+.main-nav a {
+  color: rgb(100, 3, 180);
+}
+.main-nav a:hover {
+  color: yellow;
+}

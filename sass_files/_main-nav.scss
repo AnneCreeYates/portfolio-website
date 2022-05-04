@@ -1,0 +1,14 @@
+@use 'colors';
+@use 'fonts';
+
+.main-nav {
+    display: grid;
+    font-family: fonts.$primary-text-font;
+    background-color: colors.$secondary-clr;
+    a {
+        color: colors.$primary-clr;
+        &:hover {
+            color: yellow;
+        }
+    }
+}
