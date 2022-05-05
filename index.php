@@ -87,7 +87,7 @@
 
 
     </div>
-</section>
+  </section>
 
   <section class="work" id="work">
     <div class="work__wrapper">
@@ -132,9 +132,7 @@
     </div>
 
   </section>
-
-</body>
-<footer>
+  <footer>
 
   <ul>
     <li><a href="https://www.facebook.com/annecreeyates" target=_blank class="fa fa-facebook"></a></li>
@@ -149,6 +147,8 @@
   </p>
 
 </footer>
+</body>
+
 <script type="text/javascript" src="main.js"></script>
 
 </html>

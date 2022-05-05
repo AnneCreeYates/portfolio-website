@@ -22,11 +22,10 @@ a {
 .main-nav {
   position: absolute;
   display: flex;
-  width: fit-content;
-  height: min-content;
-  font-size: 2.5em;
+  width: 100%;
+  height: fit-content;
+  font-size: 1.5em;
   font-family: "Jost", sans-serif;
-  background-color: rgb(16, 248, 159);
 }
 .main-nav a {
   color: rgb(100, 3, 180);
@@ -37,5 +36,9 @@ a {
 }
 .main-nav li {
   list-style: none;
-  margin: 2em;
+  margin: 0.3em;
+  background-color: rgb(16, 248, 159);
+  text-align: center;
+  padding: 27% 0;
+  border-radius: 50%;
 }
