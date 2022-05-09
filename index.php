@@ -30,13 +30,13 @@
     <nav class="main-nav">
 
       <ul class="main-nav__menu">
-        <li class="main-nav__item">
+        <li class="main-nav__item" id = "about">
           <a href="#about" class="main-nav__about-link">About</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item" id = "work">
           <a href="#work" class="main-nav__work-link">Work</a>
         </li>
-        <li class="main-nav__item">
+        <li class="main-nav__item" id = "contact">
           <a href="#contact" class="main-nav__contact-link">Contact</a>
         </li>
       </ul>
@@ -60,8 +60,7 @@
       </header>
 
     <figure class="intro__images">
-      <img class="image-frame" src="./imgs/polaroid-and-flowers.png">
-      <img class="image-hero" src="./imgs/pontu.gif">
+      
     </figure>
     
   </section>
@@ -99,7 +98,7 @@
           molestiae similique, doloremque veritatis laborum omnis dignissimos reiciendis
           atque maxime!
           <a href="http://solicitor-southkensington.rf.gd" target="_blank">
-            <img class = work__project-image src="imgs\the-shard-london-skyline.jpg" width = "300" height = "300" alt="black and white London skyline featuring the Shard"/>
+            <img class = work__project-image src="imgs\the-shard-london-skyline.jpg" width = "500" height = "300" alt="black and white London skyline featuring the Shard"/>
             <!--the jpg with the first glance of the website goes here-->
           </a>
         </p>
@@ -143,7 +142,7 @@
 
   <p class="references">
     Resources:
-    <a href='https://pngtree.com/so/polaroid'>polaroid png from pngtree.com/</a>
+    <a> ... </a>
   </p>
 
 </footer>

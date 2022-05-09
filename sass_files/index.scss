@@ -1,6 +1,6 @@
 //variables
-@forward 'colors';
-@forward 'fonts';
+@forward 'variables';
+
 
 //basic layout
 @forward 'base';
@@ -8,6 +8,6 @@
 
 
 //components (button, nav bar, card)
-
+@forward 'modules';
 //utilities (margin classes, padding, opacity)
 

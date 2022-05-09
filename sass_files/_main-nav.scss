@@ -1,34 +1,89 @@
-@use 'colors';
-@use 'fonts';
+@use 'variables';
+
+
+.hamburger-bars {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    width: 2em;
+    height: 2em;
+    margin: 0.2em;
+    border: variables.$nav-primary-clr solid 4px;
+    justify-content: center;
+    border-radius: 50%;
+
+    span {
+        background-color: variables.$nav-primary-clr;
+        display: flex;
+        width: 1em;
+        height: 0.2em;
+        margin: 1.5px;
+        align-self: center;
+    }
+
+}
 
 .main-nav {
-    position: absolute;
+    position:absolute;
     display: flex;
-    width: 100%;
-    height: fit-content;
+    border: rgb(50, 230, 14) 1px solid;
+    font-size: variables.$nav-font-size;
+    font-family: variables.$primary-font;
     
-    font-size: fonts.$nav-font-size;
-    font-family: fonts.$primary-font;
     
-
-    a {
-        color: colors.$primary-clr;
-        text-decoration: none;
-       
-        
-        
-        
-        &:hover {
-            color: yellow;
-        }
-    }
 
     li {
         list-style: none;
-        margin: 0.3em;
-        background-color: colors.$secondary-clr;
-        text-align: center;
-        padding: 27% 0;
+        display: grid;
         border-radius: 50%;
+        border: variables.$nav-primary-clr 4px solid;
+        height: 6em;
+        align-content: center;
+       
+        a {
+            color: variables.$nav-primary-clr;
+            text-decoration: none;
+            text-align: center;
+            margin: auto;
+                      
+            &:hover {
+                color: blue;
+            }
+        }
+
+        &#about {
+            position: relative;
+            left: 1.8em;
+            top: 0.5em;
+            width: 4em;
+            height: 4em;
+            
+            
+        }
+
+        &#work {
+            position: relative;
+            left: 3.1em;
+
+            height: 5.5em;
+            width: 5.5em;
+            
+            
+        }
+
+        &#contact {
+            position: relative;
+            left: 2em;
+            bottom: 0.3em;
+
+            height: 4.8em;
+            width: 4.8em;
+        }
+
+        
     }
+
+    
 }
+

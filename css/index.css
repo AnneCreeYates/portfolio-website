@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: rgb(100, 3, 180);
+  background-color: rgb(27, 16, 39);
 }
 
 li {
@@ -19,26 +19,72 @@ a {
   color: rgb(59, 226, 37);
 }
 
+.hamburger-bars {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  margin: 0.2em;
+  border: rgb(252, 252, 24) solid 4px;
+  justify-content: center;
+  border-radius: 50%;
+}
+.hamburger-bars span {
+  background-color: rgb(252, 252, 24);
+  display: flex;
+  width: 1em;
+  height: 0.2em;
+  margin: 1.5px;
+  align-self: center;
+}
+
 .main-nav {
   position: absolute;
   display: flex;
-  width: 100%;
-  height: fit-content;
+  border: rgb(50, 230, 14) 1px solid;
   font-size: 1.5em;
   font-family: "Jost", sans-serif;
 }
-.main-nav a {
-  color: rgb(100, 3, 180);
-  text-decoration: none;
-}
-.main-nav a:hover {
-  color: yellow;
-}
 .main-nav li {
   list-style: none;
-  margin: 0.3em;
-  background-color: rgb(16, 248, 159);
-  text-align: center;
-  padding: 27% 0;
+  display: grid;
   border-radius: 50%;
+  border: rgb(252, 252, 24) 4px solid;
+  height: 6em;
+  align-content: center;
+}
+.main-nav li a {
+  color: rgb(252, 252, 24);
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+}
+.main-nav li a:hover {
+  color: blue;
+}
+.main-nav li#about {
+  position: relative;
+  left: 1.8em;
+  top: 0.5em;
+  width: 4em;
+  height: 4em;
+}
+.main-nav li#work {
+  position: relative;
+  left: 3.1em;
+  height: 5.5em;
+  width: 5.5em;
+}
+.main-nav li#contact {
+  position: relative;
+  left: 2em;
+  bottom: 0.3em;
+  height: 4.8em;
+  width: 4.8em;
+}
+
+__neon {
+  color: yellow;
 }

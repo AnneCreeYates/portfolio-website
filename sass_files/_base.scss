@@ -1,4 +1,4 @@
-@use 'colors';
+@use 'variables';
 
 
 * ,
@@ -13,15 +13,14 @@
 
 
 body {
-    background-color: colors.$primary-clr;
-    
+    background-color: rgb(27, 16, 39);
 }
 
 li {
-    color: colors.$secondary-clr;
+    color: variables.$secondary-clr;
     
 }
 
 a {
-    color: colors.$link-clr;
+    color: variables.$link-clr;
 }
