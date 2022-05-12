@@ -1,6 +1,10 @@
-
+@use 'variables';
 // neon look
 
-__neon {
-  color: yellow;
+@mixin neon-border {
+  box-shadow: inset 0 0 1em variables.$nav-secondary-clr, 0 0 1em variables.$nav-secondary-clr, inset 0 0 0.3em white, 0 0 2em white;
+}
+
+@mixin neon-text {
+  text-shadow: 0 0 0.1em variables.$nav-secondary-clr, 0 0 0.5em white;
 }

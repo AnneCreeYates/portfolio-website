@@ -1,4 +1,5 @@
 @use 'variables';
+@use 'modules';
 
 
 .hamburger-bars {
@@ -9,27 +10,31 @@
     width: 2em;
     height: 2em;
     margin: 0.2em;
-    border: variables.$nav-primary-clr solid 4px;
+    border: variables.$nav-secondary-clr 4px solid;
     justify-content: center;
     border-radius: 50%;
 
     span {
-        background-color: variables.$nav-primary-clr;
         display: flex;
         width: 1em;
-        height: 0.2em;
+        height: 0.125em;
         margin: 1.5px;
         align-self: center;
+        background-color: variables.$nav-secondary-clr;
+        
     }
-
+    
+    @include modules.neon-border;
 }
 
 .main-nav {
     position:absolute;
     display: flex;
-    border: rgb(50, 230, 14) 1px solid;
+    width: 50%;
     font-size: variables.$nav-font-size;
     font-family: variables.$primary-font;
+    margin: -1.6em 0.6em;
+
     
     
 
@@ -37,15 +42,19 @@
         list-style: none;
         display: grid;
         border-radius: 50%;
-        border: variables.$nav-primary-clr 4px solid;
+        border: variables.$nav-secondary-clr 4px solid;
         height: 6em;
         align-content: center;
+        
+        @include modules.neon-text;
        
         a {
-            color: variables.$nav-primary-clr;
+            color: variables.$nav-secondary-clr;
             text-decoration: none;
             text-align: center;
             margin: auto;
+            
+            
                       
             &:hover {
                 color: blue;
@@ -80,7 +89,8 @@
             height: 4.8em;
             width: 4.8em;
         }
-
+        
+        @include modules.neon-border;
         
     }
 

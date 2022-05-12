@@ -8,7 +8,9 @@
 }
 
 body {
-  background-color: rgb(27, 16, 39);
+  background-image: url(/imgs/tim-mossholder-rFD2-gnf0ws-unsplash-cropped-low.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 li {
@@ -27,36 +29,40 @@ a {
   width: 2em;
   height: 2em;
   margin: 0.2em;
-  border: rgb(252, 252, 24) solid 4px;
+  border: rgb(245, 245, 219) 4px solid;
   justify-content: center;
   border-radius: 50%;
+  box-shadow: inset 0 0 1em rgb(245, 245, 219), 0 0 1em rgb(245, 245, 219), inset 0 0 0.3em white, 0 0 2em white;
 }
 .hamburger-bars span {
-  background-color: rgb(252, 252, 24);
   display: flex;
   width: 1em;
-  height: 0.2em;
+  height: 0.125em;
   margin: 1.5px;
   align-self: center;
+  background-color: rgb(245, 245, 219);
 }
 
 .main-nav {
   position: absolute;
   display: flex;
-  border: rgb(50, 230, 14) 1px solid;
-  font-size: 1.5em;
+  width: 50%;
+  font-size: 2em;
   font-family: "Jost", sans-serif;
+  margin: -1.6em 0.6em;
 }
 .main-nav li {
   list-style: none;
   display: grid;
   border-radius: 50%;
-  border: rgb(252, 252, 24) 4px solid;
+  border: rgb(245, 245, 219) 4px solid;
   height: 6em;
   align-content: center;
+  text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
+  box-shadow: inset 0 0 1em rgb(245, 245, 219), 0 0 1em rgb(245, 245, 219), inset 0 0 0.3em white, 0 0 2em white;
 }
 .main-nav li a {
-  color: rgb(252, 252, 24);
+  color: rgb(245, 245, 219);
   text-decoration: none;
   text-align: center;
   margin: auto;
@@ -85,6 +91,15 @@ a {
   width: 4.8em;
 }
 
-__neon {
-  color: yellow;
+.intro {
+  position: relative;
+  display: grid;
+  color: rgb(4, 255, 108);
+  font-family: "Water Brush", cursive;
+  font-size: 3em;
+  text-align: right;
+  margin: 1em 0;
+  height: 1em;
+  width: 13em;
+  text-shadow: 1px 1px 1px rgb(255, 252, 102), 2px 3px 7px rgb(250, 250, 250), 2px 0 1em rgb(204, 2, 255), 0 0 0.9em rgb(255, 0, 212);
 }
