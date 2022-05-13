@@ -35,8 +35,10 @@
     font-family: variables.$primary-font;
     margin: -1.6em 0.6em;
 
-    
-    
+    .main-nav__menu {
+        transform: translateX(-200%);
+        transition: transform ease-in-out 250ms;
+    }
 
     li {
         list-style: none;
@@ -57,7 +59,7 @@
             
                       
             &:hover {
-                color: blue;
+                color: variables.$title-clr;
             }
         }
 
@@ -97,3 +99,8 @@
     
 }
 
+.is-open {
+    .main-nav__menu {
+        transform: translateX(0);
+    }
+}

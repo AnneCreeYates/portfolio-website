@@ -148,6 +148,6 @@
 </footer>
 </body>
 
-<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="nav.js"></script>
 
 </html>
