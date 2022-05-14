@@ -13,6 +13,7 @@
     border: variables.$nav-secondary-clr 4px solid;
     justify-content: center;
     border-radius: 50%;
+    
 
     span {
         display: flex;
@@ -33,7 +34,8 @@
     width: 50%;
     font-size: variables.$nav-font-size;
     font-family: variables.$primary-font;
-    margin: -1.6em 0.6em;
+    margin: -1.6em 0;
+    z-index: 10;
 
     .main-nav__menu {
         transform: translateX(-200%);
@@ -69,7 +71,7 @@
             top: 0.5em;
             width: 4em;
             height: 4em;
-            
+            transform: rotate(-19deg);
             
         }
 
@@ -87,13 +89,20 @@
             position: relative;
             left: 2em;
             bottom: 0.3em;
-
             height: 4.8em;
             width: 4.8em;
+            transform: rotate(19deg);
         }
         
         @include modules.neon-border;
         
+    }
+
+    .main-nav__about-link, .main-nav__contact-link{
+        font-size: 1.3em;
+    }
+    .main-nav__work-link {
+        font-size: 1.7em;
     }
 
     
@@ -102,5 +111,24 @@
 .is-open {
     .main-nav__menu {
         transform: translateX(0);
+        
+    }
+
+    .middle-bar {
+        visibility: hidden;
+    }
+
+    .top-bar {
+        transform: rotate(45deg);
+        margin-top: 0.2em;
+        width: 1.3em;
+        transition: transform ease-in 150ms;
+    }
+    .bottom-bar {
+        transform: rotate(-45deg);
+        width: 1.3em;
+        position:absolute;
+        transition: transform ease-in 350ms;
+
     }
 }

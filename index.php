@@ -12,7 +12,11 @@
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&family=Water+Brush&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&family=Water+Brush&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
 
 
   <!-- make the title more gripping, more key words etc. for the purpose of SEO -->
@@ -56,7 +60,7 @@
         <p class = "intro__hello">Hello!</p>
         <p class = "intro__name"> I'm Anna</p>
         <p class = "intro__title">Front End Developer</p>
-        <p class = "intro__location">located in <span>London</span></p>
+        <p class = "intro__location">located in <span class = "intro-location__span">London</span></p>
       </header>
 
     <figure class="intro__images">
@@ -98,7 +102,7 @@
           molestiae similique, doloremque veritatis laborum omnis dignissimos reiciendis
           atque maxime!
           <a href="http://solicitor-southkensington.rf.gd" target="_blank">
-            <img class = work__project-image src="imgs\the-shard-london-skyline2-forweb.jpg" width = "500" height = "300" alt="black and white London skyline featuring the Shard"/>
+            <img class = work__project-image src="imgs\the-shard-london-skyline2-forweb.jpg" alt="black and white London skyline featuring the Shard"/>
             <!--the jpg with the first glance of the website goes here-->
           </a>
         </p>

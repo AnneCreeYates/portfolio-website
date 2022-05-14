@@ -3,7 +3,7 @@ const mainNavToggle = document.querySelector(".main-nav")
 const mainNavItem = document.querySelectorAll(".main-nav__item")
 
 mainNavToggle.addEventListener("click", e => {
-    document.body.classList.add("is-open")
+    document.body.classList.toggle("is-open")
 })
 
 

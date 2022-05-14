@@ -1,0 +1,15 @@
+@use 'variables';
+@use 'modules';
+
+.contact {
+    background-color: rgba($color: #e5e7dd, $alpha: 0.6);
+
+    h1 {
+        font-family: variables.$title-font;
+    }
+}
+
+.contact__wrapper {
+    margin: 2em;
+}
+

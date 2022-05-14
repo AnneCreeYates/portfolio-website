@@ -1,0 +1,25 @@
+@use 'variables';
+@use 'modules';
+
+.work {
+    display: grid;
+    position:relative;
+    width:100vw;
+    padding: 2.5em;
+    background-color: rgba($color: #fa8bfa, $alpha: .7);
+
+    h1 {
+        font-family: variables.$title-font;
+    }
+}
+
+.work__project-description {
+    width: 90%;
+    height: auto;
+}
+
+.work__project-image {
+    width: 50vw;
+    height: auto;
+    margin: 2em;
+}
