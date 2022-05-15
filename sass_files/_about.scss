@@ -3,16 +3,48 @@
 
 .about {
     display: grid;
-    position:relative;
-    width: 100vw;
+    width: 100%;
+    height: auto;
     padding: 2.5em;
-    background-color: rgba($color: #e5e7dd, $alpha: 0.6);
+    background-color: rgba($color: variables.$title-clr, $alpha: 0.2);
+    
+    
     
     h1 {
-        font-family: variables.$title-font;
+       @include modules.section-title;
+       @include modules.neon-text;
     }
+
+    p, ul {
+        color: variables.$nav-secondary-clr;
+        font-size: variables.$primary-font-size;
+        font-family: variables.$primary-font;
+        font-weight: 500;
+        margin-bottom: 1em;
+    }
+
+    li {
+        margin-left: 2em;
+        margin-bottom: 0.3em;
+    }
+
+    .contact-link {
+        font-family: variables.$title-font;
+        color: variables.$nav-secondary-clr;
+        font-size: variables.$link-font-size;
+        text-decoration: none;
+        font-weight: 600;
+
+        @include modules.neon-text;
+        
+
+        &:hover {
+            color: variables.$primary-clr;
+        }
+    }
+
+    
 }
 
-.about__wrapper {
-    margin: 1em;
-}
+
+

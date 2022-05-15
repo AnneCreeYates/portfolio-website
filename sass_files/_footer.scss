@@ -1,0 +1,19 @@
+@use 'variables';
+@use 'modules';
+
+footer ul {
+    background-color: rgba($color: variables.$primary-clr, $alpha: .7);
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 0.7em;
+
+
+    a {
+        color: variables.$nav-secondary-clr;
+        text-decoration: none;
+    }
+
+   
+    
+}

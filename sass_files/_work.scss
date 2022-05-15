@@ -4,22 +4,36 @@
 .work {
     display: grid;
     position:relative;
-    width:100vw;
+    width: 100vw;
+    height: auto;
     padding: 2.5em;
-    background-color: rgba($color: #fa8bfa, $alpha: .7);
+    background-color: rgba($color: variables.$primary-clr, $alpha: .7);
 
     h1 {
-        font-family: variables.$title-font;
+        @include modules.section-title;
+        @include modules.neon-text;
     }
 }
 
-.work__project-description {
-    width: 90%;
+.work__project-description, .work__project-title{
+    color: variables.$nav-secondary-clr;
+    font-size: variables.$primary-font-size;
+    font-family: variables.$primary-font;
+    font-weight: 500;
+    margin-bottom: 1em;
+    width: 100%;
     height: auto;
 }
 
+.work__project-title {
+    font-size: calc(variables.$primary-font-size * 1.2);
+}
+
 .work__project-image {
-    width: 50vw;
+    width: 75%;
     height: auto;
     margin: 2em;
+    border-radius: 6px; 
+    
+    @include modules.neon-border;
 }

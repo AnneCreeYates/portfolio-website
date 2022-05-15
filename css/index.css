@@ -23,19 +23,11 @@ body {
   background-size: cover;
 }
 
-li {
-  color: rgb(16, 248, 159);
-}
-
-a {
-  color: rgb(59, 226, 37);
-}
-
 .hamburger-bars {
   cursor: pointer;
   display: flex;
   flex-direction: column;
-  position: absolute;
+  position: fixed;
   width: 2em;
   height: 2em;
   margin: 0.2em;
@@ -54,11 +46,11 @@ a {
 }
 
 .main-nav {
-  position: absolute;
+  position: fixed;
   display: flex;
-  width: 50%;
+  width: auto;
   font-size: 2em;
-  font-family: "Jost", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   margin: -1.6em 0;
   z-index: 10;
 }
@@ -72,20 +64,18 @@ a {
   border-radius: 50%;
   border: rgb(245, 245, 219) 4px solid;
   height: 6em;
-  align-content: center;
   text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
   box-shadow: inset 0 0 1em rgb(245, 245, 219), 0 0 1em rgb(245, 245, 219), inset 0 0 0.3em white, 0 0 2em white;
 }
 .main-nav li a {
   color: rgb(245, 245, 219);
   text-decoration: none;
-  text-align: center;
   margin: auto;
 }
 .main-nav li a:hover {
-  color: rgb(4, 255, 108);
+  color: rgb(174, 255, 23);
 }
-.main-nav li#about {
+.main-nav li#about-bubble {
   position: relative;
   left: 1.8em;
   top: 0.5em;
@@ -93,13 +83,13 @@ a {
   height: 4em;
   transform: rotate(-19deg);
 }
-.main-nav li#work {
+.main-nav li#work-bubble {
   position: relative;
   left: 3.1em;
   height: 5.5em;
   width: 5.5em;
 }
-.main-nav li#contact {
+.main-nav li#contact-bubble {
   position: relative;
   left: 2em;
   bottom: 0.3em;
@@ -136,14 +126,14 @@ a {
 .intro {
   position: relative;
   display: block;
-  color: rgb(4, 255, 108);
+  color: rgb(174, 255, 23);
   font-family: "Zen Loop", cursive;
   font-size: 3em;
   text-align: right;
-  margin: 1em;
+  margin: 1em 1em auto;
   height: 100vh;
   width: auto;
-  text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 2px rgb(244, 247, 203), 0 0 0.9em rgb(255, 254, 196);
+  text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 3px rgb(244, 247, 203), 0 0 2em rgb(255, 254, 196);
 }
 
 .intro__hello {
@@ -173,48 +163,137 @@ a {
 
 .about {
   display: grid;
-  position: relative;
-  width: 100vw;
+  width: 100%;
+  height: auto;
   padding: 2.5em;
-  background-color: rgba(229, 231, 221, 0.6);
+  background-color: rgba(174, 255, 23, 0.2);
 }
 .about h1 {
-  font-family: "Water Brush", cursive;
+  font-family: "Zen Loop", cursive;
+  font-size: 3em;
+  color: rgb(245, 245, 219);
+  margin-bottom: 0.3em;
+  text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
 }
-
-.about__wrapper {
-  margin: 1em;
+.about p, .about ul {
+  color: rgb(245, 245, 219);
+  font-size: 1.2em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+.about li {
+  margin-left: 2em;
+  margin-bottom: 0.3em;
+}
+.about .contact-link {
+  font-family: "Zen Loop", cursive;
+  color: rgb(245, 245, 219);
+  font-size: 1.6em;
+  text-decoration: none;
+  font-weight: 600;
+  text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
+}
+.about .contact-link:hover {
+  color: #743f74;
 }
 
 .work {
   display: grid;
   position: relative;
   width: 100vw;
+  height: auto;
   padding: 2.5em;
-  background-color: rgba(250, 139, 250, 0.7);
+  background-color: rgba(116, 63, 116, 0.7);
 }
 .work h1 {
-  font-family: "Water Brush", cursive;
+  font-family: "Zen Loop", cursive;
+  font-size: 3em;
+  color: rgb(245, 245, 219);
+  margin-bottom: 0.3em;
+  text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
 }
 
-.work__project-description {
-  width: 90%;
+.work__project-description, .work__project-title {
+  color: rgb(245, 245, 219);
+  font-size: 1.2em;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1em;
+  width: 100%;
   height: auto;
+}
+
+.work__project-title {
+  font-size: 1.44em;
 }
 
 .work__project-image {
-  width: 50vw;
+  width: 75%;
   height: auto;
   margin: 2em;
+  border-radius: 6px;
+  box-shadow: inset 0 0 1em rgb(245, 245, 219), 0 0 1em rgb(245, 245, 219), inset 0 0 0.3em white, 0 0 2em white;
 }
 
 .contact {
-  background-color: rgba(229, 231, 221, 0.6);
+  background-color: rgba(174, 255, 23, 0.2);
+  padding: 2.5em;
+  height: 0 auto;
 }
 .contact h1 {
-  font-family: "Water Brush", cursive;
+  font-family: "Zen Loop", cursive;
+  font-size: 3em;
+  color: rgb(245, 245, 219);
+  margin-bottom: 0.3em;
+  text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
 }
 
-.contact__wrapper {
-  margin: 2em;
+.name, .email, .subject, .message {
+  width: 100%;
+  border-radius: 7px;
+  margin-bottom: 0.6em;
+  padding: 0.4em;
+  font-size: 1.2em;
+}
+
+.message {
+  width: 100%;
+  height: 30vh;
+  font-size: 1.68em;
+}
+
+.submit {
+  background: none;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.4em;
+  position: relative;
+  margin: 0 auto;
+  border: rgb(245, 245, 219) 4px solid;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1em rgb(245, 245, 219), 0 0 1em rgb(245, 245, 219), inset 0 0 0.3em white, 0 0 2em white;
+  font-family: "Zen Loop", cursive;
+  font-size: 3em;
+  color: rgb(245, 245, 219);
+  margin-bottom: 0.3em;
+  text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
+  font-size: 3.9em;
+  font-weight: 500;
+}
+.submit:hover {
+  cursor: pointer;
+}
+
+footer ul {
+  background-color: rgba(116, 63, 116, 0.7);
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0.7em;
+}
+footer ul a {
+  color: rgb(245, 245, 219);
+  text-decoration: none;
 }

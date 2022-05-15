@@ -7,16 +7,16 @@
     font-family: variables.$intro-font;
     font-size: variables.$title-font-size;
     text-align: right;
-    margin: 1em;
+    margin: 1em 1em auto;
     height: 100vh;
     width: auto;
-    text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 2px rgb(244, 247, 203), 0 0 0.9em rgb(255, 254, 196);
+    text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 3px rgb(244, 247, 203), 0 0 2em rgb(255, 254, 196);
 
 }
 
 .intro__hello {
     width: auto;
-    color:rgb(174, 255, 23);
+    color: variables.$title-clr;
     font-size: 3.3em;
 }
 

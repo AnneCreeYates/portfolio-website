@@ -1,9 +1,9 @@
 //COLOURS
 
 //basic theme
-$primary-clr: rgb(100, 3, 180);
+$primary-clr: #743f74;
 $secondary-clr: rgb(16, 248, 159);
-$title-clr: rgb(4, 255, 108);
+$title-clr: rgb(174, 255, 23);
 
 $link-clr: rgb(59, 226, 37);
 
@@ -17,14 +17,13 @@ $nav-secondary-clr: rgb(245, 245, 219);
 
 //main fonts
 $intro-font: 'Zen Loop', cursive;
-$title-font: 'Water Brush', cursive;
-$nav-font: 'Jost', sans-serif;
-$primary-font: 'Jost', sans-serif;
-$secondary-font: monospace;
+$title-font: 'Zen Loop', cursive;
+// $nav-font: 'Jost', sans-serif;
+$primary-font: 'Barlow Condensed', sans-serif;
 
 $title-font-size: 3em;
 $nav-font-size: 2em;
-$primary-font-size: 2.5em;
-$secondary-font-size: 1.4em;
+$primary-font-size: 1.2em;
+$link-font-size: 1.6em;
 
 //additional/special fonts

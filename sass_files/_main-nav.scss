@@ -6,7 +6,7 @@
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    position:absolute;
+    position:fixed;
     width: 2em;
     height: 2em;
     margin: 0.2em;
@@ -29,9 +29,9 @@
 }
 
 .main-nav {
-    position:absolute;
+    position: fixed;
     display: flex;
-    width: 50%;
+    width: auto;
     font-size: variables.$nav-font-size;
     font-family: variables.$primary-font;
     margin: -1.6em 0;
@@ -48,24 +48,21 @@
         border-radius: 50%;
         border: variables.$nav-secondary-clr 4px solid;
         height: 6em;
-        align-content: center;
         
         @include modules.neon-text;
        
         a {
             color: variables.$nav-secondary-clr;
             text-decoration: none;
-            text-align: center;
             margin: auto;
             
-            
-                      
+                                  
             &:hover {
                 color: variables.$title-clr;
             }
         }
 
-        &#about {
+        &#about-bubble {
             position: relative;
             left: 1.8em;
             top: 0.5em;
@@ -75,7 +72,7 @@
             
         }
 
-        &#work {
+        &#work-bubble {
             position: relative;
             left: 3.1em;
 
@@ -85,7 +82,7 @@
             
         }
 
-        &#contact {
+        &#contact-bubble {
             position: relative;
             left: 2em;
             bottom: 0.3em;
@@ -100,6 +97,7 @@
 
     .main-nav__about-link, .main-nav__contact-link{
         font-size: 1.3em;
+        
     }
     .main-nav__work-link {
         font-size: 1.7em;

@@ -8,3 +8,10 @@
 @mixin neon-text {
   text-shadow: 0 0 0.1em variables.$nav-secondary-clr, 0 0 0.5em white;
 }
+
+@mixin section-title {
+  font-family: variables.$title-font;
+  font-size: variables.$title-font-size;
+  color: variables.$nav-secondary-clr;
+  margin-bottom: 0.3em;
+}

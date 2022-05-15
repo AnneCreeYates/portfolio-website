@@ -11,8 +11,8 @@
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500&family=Water+Brush&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,13 +34,13 @@
     <nav class="main-nav">
 
       <ul class="main-nav__menu">
-        <li class="main-nav__item" id = "about">
+        <li class="main-nav__item" id = "about-bubble">
           <a href="#about" class="main-nav__about-link">About</a>
         </li>
-        <li class="main-nav__item" id = "work">
+        <li class="main-nav__item" id = "work-bubble">
           <a href="#work" class="main-nav__work-link">Work</a>
         </li>
-        <li class="main-nav__item" id = "contact">
+        <li class="main-nav__item" id = "contact-bubble">
           <a href="#contact" class="main-nav__contact-link">Contact</a>
         </li>
       </ul>
@@ -69,53 +69,42 @@
     
   </section>
 
-  <section class="about" id="about">
+  <section class="about">
     <div class="about__wrapper">
-      <h1>About me</h1>
+      <h1 id="about">About me</h1>
       <p>
-        Like in every case there is a short and a long version of my story.
-        The short goes like this:
-      </p>
+      I am an artist that has found in front end development a new form of expression.
+      By using my skills in coding and design as well as passion for giving the user the best experience possible I wish to create cutting edge interfaces that are engaging and look great. 
+      Trouble shooting is my second nature, so I try to solve any issue I can put my hands (and my brain-cycles) on.
+      I work with a range of technologies, including (but not exclusively) <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>SaSS</strong> as well as <strong>PHP</strong>, and I constantly develop my already existing ones and new skills.
 
-      <ul>
-        <li>I am an artist that has found in coding a new form of expression.</li>
-        <li>Trouble shooting is my second nature, so I try to solve any issue I can put my hands (and my brain-cycles) on.</li>
-        <li>I work with a range of technologies, including (but not exclusively) <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong> as well as <strong>PHP</strong>, and I constantly develop my already existing ones and new skills.</li>
-      </ul>
-      
       <p>
-        If you wish to find out more here is the longer version.
-        If you have any questions go ahead and <a href=#contact class="contact-link"> get in touch.</a>
+        If you have any questions go ahead and<a href=#contact class="contact-link"> get in touch.</a>
       </p>
 
 
     </div>
   </section>
 
-  <section class="work" id="work">
+  <section class="work">
     <div class="work__wrapper">
-      <h1>Latest Project</h1>
-      <h2 class = "work__project-title">Project title goes here - this is a placeholder</h2>
+      <h1 id="work">Latest Project</h1>
+      <h2 class = "work__project-title">Landing page for a young solicitor</h2>
         <p class = "work__project-description">
-          A lot of Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Itaque eos, explicabo odio quis ipsa, neque modi et voluptate voluptatibus assumenda
-          molestiae similique, doloremque veritatis laborum omnis dignissimos reiciendis
-          atque maxime!
+        Beginning a new career in any industry is always stressful, so I built this simple landing page to help a young solicitor start growing their presence online and maybe build their confidence in their abilities.
+The page is very simple. It contains short description of prided services and contact details – a business card style.
+
           <a href="http://solicitor-southkensington.rf.gd" target="_blank">
             <img class = work__project-image src="imgs\the-shard-london-skyline2-forweb.jpg" alt="black and white London skyline featuring the Shard"/>
             <!--the jpg with the first glance of the website goes here-->
           </a>
         </p>
-      <!--This is a placeholder for a description of the latest project. 
-                Let people know what exactly is it, like "this is a website of a so-and-so artist/ business",
-            the reason for building it "bringing the wonderful aretwork to the world, etc", what techology was used to build it, like html, css, js, react etc,
-        and make sure the website is live before making it go live. And finally add the link under the description. Should show up as a thumbnail.-->
     </div>
   </section>
 
-  <section class="contact" id="contact">
+  <section class="contact">
     <div class = "contact__wrapper">
-      <h1>Let's get in touch!</h1>
+      <h1 id="contact">Let's get in touch!</h1>
 
       <div class="contact__form-wrapper">
         <form class="contact__form" method="post" action="/form-to-email.php" name="formToEmail">
@@ -138,11 +127,12 @@
   <footer>
 
   <ul>
-    <li><a href="https://www.facebook.com/annecreeyates" target=_blank class="fa fa-facebook"></a></li>
-    <li><a href="https://twitter.com/CreeYates" target=_blank class="fa fa-twitter"></a></li>
-    <li><a href="https://www.linkedin.com/in/annawrzosek/" target=_blank class="fa fa-linkedin"></a></li>
+    <li><a href="https://www.facebook.com/annecreeyates" target=_blank class="fa fa-facebook" class = "media-icon"></a></li>
+    <li><a href="https://twitter.com/CreeYates" target=_blank class="fa fa-twitter" class = "media-icon"></a></li>
+    <li><a href="https://www.linkedin.com/in/annawrzosek/" target=_blank class="fa fa-linkedin" class = "media-icon"></a></li>
+    <li><a href="https://github.com/AnneCreeYates" target=_blank class="fa fa-github" class = "media-icon"></a></li>
   </ul>
-  <!--think if you want to add some other social media later - github-->
+  
 
   <p class="references">
     Resources:
