@@ -18,9 +18,7 @@ body::before {
 
 body {
   background-image: url(/imgs/greg-rosenke-_8mv1nzwb_s-unsplash.jpg);
-  background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
 }
 
 .hamburger-bars {
@@ -48,7 +46,7 @@ body {
 .main-nav {
   position: fixed;
   display: flex;
-  width: auto;
+  width: fit-content;
   font-size: 2em;
   font-family: "Barlow Condensed", sans-serif;
   margin: -1.6em 0;
@@ -57,6 +55,8 @@ body {
 .main-nav .main-nav__menu {
   transform: translateX(-200%);
   transition: transform ease-in-out 250ms;
+  visibility: none;
+  height: 0;
 }
 .main-nav li {
   list-style: none;
@@ -105,7 +105,10 @@ body {
 }
 
 .is-open .main-nav__menu {
+  display: block;
   transform: translateX(0);
+  transition: transform ease-in-out 250ms;
+  visibility: visible;
 }
 .is-open .middle-bar {
   visibility: hidden;
@@ -114,7 +117,7 @@ body {
   transform: rotate(45deg);
   margin-top: 0.2em;
   width: 1.3em;
-  transition: transform ease-in 150ms;
+  transition: transform ease-in 200ms;
 }
 .is-open .bottom-bar {
   transform: rotate(-45deg);
@@ -130,10 +133,15 @@ body {
   font-family: "Zen Loop", cursive;
   font-size: 3em;
   text-align: right;
-  margin: 1em 1em auto;
+  margin: 1em 1em 0;
   height: 100vh;
   width: auto;
   text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 3px rgb(244, 247, 203), 0 0 2em rgb(255, 254, 196);
+}
+@media (min-width: 50em) {
+  .intro {
+    font-size: 4.5em;
+  }
 }
 
 .intro__hello {

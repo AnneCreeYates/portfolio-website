@@ -31,15 +31,19 @@
 .main-nav {
     position: fixed;
     display: flex;
-    width: auto;
+    width: fit-content;
     font-size: variables.$nav-font-size;
     font-family: variables.$primary-font;
     margin: -1.6em 0;
     z-index: 10;
+      
 
     .main-nav__menu {
         transform: translateX(-200%);
         transition: transform ease-in-out 250ms;
+        // display:none;
+        visibility: none;
+        height: 0;
     }
 
     li {
@@ -107,9 +111,12 @@
 }
 
 .is-open {
+    
     .main-nav__menu {
+        display: block;
         transform: translateX(0);
-        
+        transition: transform ease-in-out 250ms;
+        visibility:visible;
     }
 
     .middle-bar {
@@ -120,7 +127,7 @@
         transform: rotate(45deg);
         margin-top: 0.2em;
         width: 1.3em;
-        transition: transform ease-in 150ms;
+        transition: transform ease-in 200ms;
     }
     .bottom-bar {
         transform: rotate(-45deg);

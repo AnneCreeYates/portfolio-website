@@ -1,6 +1,6 @@
 @use 'variables';
-// neon look
 
+// NEON
 @mixin neon-border {
   box-shadow: inset 0 0 1em variables.$nav-secondary-clr, 0 0 1em variables.$nav-secondary-clr, inset 0 0 0.3em white, 0 0 2em white;
 }
@@ -14,4 +14,14 @@
   font-size: variables.$title-font-size;
   color: variables.$nav-secondary-clr;
   margin-bottom: 0.3em;
+}
+
+
+
+// MEDIA QUERIES
+//width in the mixin is the default value if no specific one is provided
+@mixin mq($width: 50em) {
+  @media (min-width: $width) {
+    @content;
+  }
 }
