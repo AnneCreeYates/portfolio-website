@@ -13,11 +13,13 @@ body::before {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: linear-gradient(0deg, rgba(48, 45, 45, 0.4), rgba(36, 35, 35, 0.3));
+  background: linear-gradient(0deg, rgba(48, 45, 45, 0.4), rgba(36, 35, 35, 0.5));
+  background-size: 100%;
 }
 
 body {
   background-image: url(/imgs/greg-rosenke-_8mv1nzwb_s-unsplash.jpg);
+  background-size: 100vh;
   background-position: center;
 }
 
@@ -133,14 +135,14 @@ body {
   font-family: "Zen Loop", cursive;
   font-size: 3em;
   text-align: right;
-  margin: 1em 1em 0;
+  margin: 1em 1em -1em;
   height: 100vh;
   width: auto;
   text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 3px rgb(244, 247, 203), 0 0 2em rgb(255, 254, 196);
 }
-@media (min-width: 50em) {
+@media (min-width: 70em) {
   .intro {
-    font-size: 4.5em;
+    font-size: 3.9em;
   }
 }
 
@@ -173,8 +175,53 @@ body {
   display: grid;
   width: 100%;
   height: auto;
-  padding: 2.5em;
+  padding: 9vh 2.5em;
   background-color: rgba(174, 255, 23, 0.2);
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "image" "about__title" "about__para" "getInTouch__para";
+}
+.about img {
+  display: none;
+}
+.about .laptop__image {
+  grid-area: image;
+}
+.about .about__title {
+  grid-area: about__title;
+}
+.about .about__para {
+  grid-area: about__para;
+}
+.about .getInTouch__para {
+  grid-area: getInTouch__para;
+}
+@media (min-width: 40em) {
+  .about img {
+    display: flex;
+    width: 40vw;
+    height: auto;
+    border-radius: 24px;
+    margin: 0 auto;
+  }
+  .about {
+    padding: 10vh 5vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    grid-template-areas: "image about__title about__title" "image about__para about__para" "image getInTouch__para getInTouch__para";
+  }
+}
+@media (min-width: 60em) {
+  .about img {
+    width: 20vw;
+    margin: 1vh 3vw;
+  }
+  .about {
+    padding: 10vh 13vw;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: max-content;
+    grid-template-areas: " . image about__title about__title about__title . " " . image about__para about__para about__para . " " . image getInTouch__para getInTouch__para getInTouch__para . ";
+  }
 }
 .about h1 {
   font-family: "Zen Loop", cursive;
@@ -182,6 +229,7 @@ body {
   color: rgb(245, 245, 219);
   margin-bottom: 0.3em;
   text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
+  grid-area: "about__title";
 }
 .about p, .about ul {
   color: rgb(245, 245, 219);

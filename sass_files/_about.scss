@@ -5,14 +5,87 @@
     display: grid;
     width: 100%;
     height: auto;
-    padding: 2.5em;
+    padding: 9vh 2.5em;
     background-color: rgba($color: variables.$title-clr, $alpha: 0.2);
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "image"
+    "about__title"
+    "about__para"
+    "getInTouch__para";
+
+    img {
+        display: none;
+    }
+
+    .laptop__image {
+        grid-area: image;
+    }
+
+    .about__title {
+        grid-area: about__title;
     
+    }
+
+    .about__para {
+        grid-area: about__para;
+
+    }
+
+    .getInTouch__para {
+        grid-area: getInTouch__para;
+    }
+
+    @include modules.mq {
+
+        img {
+            display: flex;
+            width:40vw;
+            height: auto;
+            border-radius: 24px;
+            margin: 0 auto;
+            
+        }
+
+        & {
+            padding: 10vh 5vw;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: max-content;
+            grid-template-areas:
+            "image about__title about__title"
+            "image about__para about__para"
+            "image getInTouch__para getInTouch__para";    
+            
+        }
+   
+    }
+
+    @include modules.mq (60em) {
+        img {
+            width:20vw;
+            margin: 1vh 3vw;
+
+        }
+        
+        & {
+            padding: 10vh 13vw;
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: max-content;
+            grid-template-areas:
+            " . image about__title about__title about__title . "
+            " . image about__para about__para about__para . "
+            " . image getInTouch__para getInTouch__para getInTouch__para . ";
+
+    
+        }
+    }
     
     
     h1 {
        @include modules.section-title;
        @include modules.neon-text;
+       grid-area: "about__title";
     }
 
     p, ul {

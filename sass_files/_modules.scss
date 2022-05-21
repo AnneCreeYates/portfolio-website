@@ -20,7 +20,7 @@
 
 // MEDIA QUERIES
 //width in the mixin is the default value if no specific one is provided
-@mixin mq($width: 50em) {
+@mixin mq($width: 40em) {
   @media (min-width: $width) {
     @content;
   }

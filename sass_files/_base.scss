@@ -17,13 +17,15 @@ body::before {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: linear-gradient(0deg, rgba(48, 45, 45, 0.4), rgba(36, 35, 35, 0.3));
+    background: linear-gradient(0deg, rgba(48, 45, 45, 0.4), rgba(36, 35, 35, 0.5));
+    background-size: 100%;
+    
 }
 
 body {
     background-image: url(/imgs/greg-rosenke-_8mv1nzwb_s-unsplash.jpg);
     // background-repeat: no-repeat;
-    // background-size: 100vh;
+    background-size: 100vh;
     background-position: center;
 
 }

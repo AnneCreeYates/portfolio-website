@@ -8,14 +8,14 @@
     font-family: variables.$intro-font;
     font-size: variables.$title-font-size;
     text-align: right;
-    margin: 1em 1em 0;
+    margin: 1em 1em -1em;
     height: 100vh;
     width: auto;
     text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 3px rgb(244, 247, 203), 0 0 2em rgb(255, 254, 196);
 
 
-    @include modules.mq(50em) {
-        font-size: calc(variables.$title-font-size * 1.5);
+    @include modules.mq(70em) {
+        font-size: calc(variables.$title-font-size * 1.3);
     }
 }
 

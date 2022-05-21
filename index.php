@@ -63,27 +63,27 @@
         <p class = "intro__location">located in <span class = "intro-location__span">London</span></p>
       </header>
 
-    <figure class="intro__images">
       
-    </figure>
-    
   </section>
 
-  <section class="about">
-    <div class="about__wrapper">
-      <h1 id="about">About me</h1>
-      <p>
+  <section id = "about" class="about">
+    <!-- <div class="about__wrapper"> -->
+      <figure class = "laptop__image">
+        <img src="/imgs/laptop.jpg" alt = "an open laptop on a wooden table with writing on the screen 'I design and devlop experiences that make people's lives simple'">
+      </figure>
+      <h1 class="about__title">About me</h1>
+      <p class = "about__para">
       I am an artist that has found in front end development a new form of expression.
       By using my skills in coding and design as well as passion for giving the user the best experience possible I wish to create cutting edge interfaces that are engaging and look great. 
       Trouble shooting is my second nature, so I try to solve any issue I can put my hands (and my brain-cycles) on.
       I work with a range of technologies, including (but not exclusively) <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>SaSS</strong> as well as <strong>PHP</strong>, and I constantly develop my already existing ones and new skills.
 
-      <p>
+      <p class = "getInTouch__para">
         If you have any questions go ahead and<a href=#contact class="contact-link"> get in touch.</a>
       </p>
 
 
-    </div>
+    <!-- </div> -->
   </section>
 
   <section class="work">
