@@ -420,11 +420,38 @@ body {
 footer ul {
   background-color: rgba(116, 63, 116, 0.7);
   list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 0.7em;
+  margin: auto;
+  justify-content: right;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "facebook twitter linkedin github";
+}
+footer ul .facebook {
+  grid-area: facebook;
+}
+footer ul .twitter {
+  grid-area: twitter;
+}
+footer ul .linkedin {
+  grid-area: linkedin;
+}
+footer ul .github {
+  grid-area: github;
+}
+@media (min-width: 40em) {
+  footer ul {
+    grid-template-columns: 1fr repeat(4, min-content) 1fr;
+    grid-template-areas: " . facebook twitter linkedin github . ";
+  }
+}
+footer ul li {
+  margin: auto;
 }
 footer ul a {
+  display: flex;
+  width: 100%;
   color: rgb(245, 245, 219);
   text-decoration: none;
+  padding: 1em;
 }

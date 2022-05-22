@@ -1,19 +1,62 @@
 @use 'variables';
 @use 'modules';
 
-footer ul {
-    background-color: rgba($color: variables.$primary-clr, $alpha: .7);
-    list-style: none;
-    display: flex;
-    justify-content:space-evenly;
-    padding: 0.7em;
+footer {
+
+    ul {
+        background-color: rgba($color: variables.$primary-clr, $alpha: .7);
+        list-style: none;
+        margin: auto;
+        justify-content:right;
+        padding: 1em;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    
+        
+
+        .facebook {
+            grid-area: facebook;
+            
+        }
+
+        .twitter {
+            grid-area: twitter;
+        }
+
+        .linkedin {
+            grid-area: linkedin;
+        }
+
+        .github {
+            grid-area: github;
+        }
+
+        grid-template-areas: 
+        "facebook twitter linkedin github";
+
+        @include modules.mq {
+            grid-template-columns: 1fr repeat(4, min-content) 1fr;
+            grid-template-areas:
+            " . facebook twitter linkedin github . ";
+
+        }
+
+        li {
+            margin: auto;
+
+        }
 
 
-    a {
-        color: variables.$nav-secondary-clr;
-        text-decoration: none;
-    }
+        a {
+            display: flex;
+            width: 100%;
+            color: variables.$nav-secondary-clr;
+            text-decoration: none;
+            padding: 1em;
+            
+        }
 
    
     
+    }
 }

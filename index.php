@@ -125,17 +125,17 @@ The page is very simple. It contains short description of prided services and co
   <footer>
 
   <ul>
-    <li><a href="https://www.facebook.com/annecreeyates" target=_blank class="fa fa-facebook" class = "media-icon"></a></li>
-    <li><a href="https://twitter.com/CreeYates" target=_blank class="fa fa-twitter" class = "media-icon"></a></li>
-    <li><a href="https://www.linkedin.com/in/annawrzosek/" target=_blank class="fa fa-linkedin" class = "media-icon"></a></li>
-    <li><a href="https://github.com/AnneCreeYates" target=_blank class="fa fa-github" class = "media-icon"></a></li>
+    <li class = "facebook"><a href="https://www.facebook.com/annecreeyates" target=_blank class="fa fa-facebook"></a></li>
+    <li class = "twitter"><a href="https://twitter.com/CreeYates" target=_blank class="fa fa-twitter"></a></li>
+    <li class = "linkedin"><a href="https://www.linkedin.com/in/annawrzosek/" target=_blank class="fa fa-linkedin"></a></li>
+    <li class = "github"><a href="https://github.com/AnneCreeYates" target=_blank class="fa fa-github"></a></li>
   </ul>
   
 
-  <p class="references">
+  <!-- <p class="references">
     Resources:
     <a> ... </a>
-  </p>
+  </p> -->
 
 </footer>
 </body>
