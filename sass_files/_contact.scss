@@ -2,18 +2,53 @@
 @use 'modules';
 
 .contact {
+    
     background-color: rgba($color: variables.$title-clr, $alpha: 0.2);
     padding: 2.5em;
     height: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     
+    .contact__title {
+        grid-area: contact__title;
+    }
+
+    form {
+        grid-area: form;
+    }
+     
+   
+    @include modules.mq (40em){
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        
+        grid-template-areas: 
+        "contact__title form form";
+
+        .name, .email, .subject {
+            font-size: calc(variables.$primary-font-size / 1.5);
+        }
+
+        .message {
+            font-size: calc(variables.$primary-font-size /1.125);
+        }
+    }
+
+    @include modules.mq (80em) {
+        padding: 7vh 15vw;
+        font-size: calc(variables.$primary-font-size / 1.3);
+    }
 
     h1 {
         @include modules.section-title;
         @include modules.neon-text;
+
+        padding: 0 0.5em;
     }
 }
 
-.name, .email, .subject, .message {
+.name, .email, .subject {
     width: 100%;
     border-radius: 7px;
     margin-bottom: 0.6em;
@@ -22,9 +57,12 @@
 }
 
 .message {
+    border-radius: 7px;
+    margin-bottom: 0.6em;
+    padding: 0.4em;
     width: 100%;
     height: 30vh;
-    font-size: calc(variables.$primary-font-size * 1.4);
+    font-size: calc(variables.$primary-font-size * 1.3);
 }
 
 .submit {
@@ -43,7 +81,7 @@
     @include modules.section-title;
     @include modules.neon-text;
 
-    font-size: calc(variables.$title-font-size * 1.3);
+    // font-size: calc(variables.$title-font-size * 1.3);
     font-weight: 500;
 
     &:hover {

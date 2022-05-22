@@ -101,10 +101,10 @@ The page is very simple. It contains short description of prided services and co
   </section>
 
   <section class="contact">
-    <div class = "contact__wrapper">
-      <h1 id="contact">Let's get in touch!</h1>
+    <!-- <div class = "contact__wrapper"> -->
+      <h1 id="contact" class = "contact__title">Let's get in touch!</h1>
 
-      <div class="contact__form-wrapper">
+      <!-- <div class="contact__form-wrapper"> -->
         <form class="contact__form" method="post" action="/form-to-email.php" name="formToEmail">
 
           <?php echo ((!empty($errorMessage)) ? $errorMessage : '') ?>
@@ -118,8 +118,8 @@ The page is very simple. It contains short description of prided services and co
 
         </form>
 
-      </div>
-    </div>
+      <!-- </div> -->
+    <!-- </div> -->
 
   </section>
   <footer>
