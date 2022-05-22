@@ -6,8 +6,70 @@
     position:relative;
     width: 100vw;
     height: auto;
-    padding: 2.5em;
+    padding: 9vh 2.5em;
     background-color: rgba($color: variables.$primary-clr, $alpha: .7);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "work"
+    "work__project-title"
+    "work__project-description"
+    "work__project-image";
+
+    .work__header {
+        grid-area: work;
+    }
+
+    .work__project-title {
+        grid-area: work__project-title;
+    }
+
+    .work__project-description {
+        grid-area: work__project-description;
+    }
+
+    a {
+        grid-area: work__project-image;
+    }
+
+
+    @include modules.mq (60em){
+        padding: 10vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.2fr min-content 1fr;
+        grid-template-areas:
+        "work                         work__project-image work__project-image"
+        "work__project-title          work__project-image work__project-image"
+        "work__project-description    work__project-image work__project-image";
+        
+
+        .work__project-image {
+            display: flex;
+            max-width: 45em;
+            height: auto;
+            width: 85%;
+        }
+
+        .work__header {
+            display: flex;
+            max-width: 25em;
+        
+        }
+
+        .work__project-title {
+            display: flex;
+            margin-top: 0.3em;
+            max-width: 25em;
+        }
+
+        .work__project-description {
+            display: flex;
+            margin-top: 2em;
+            max-width: 25em;
+        }
+
+
+    }
 
     h1 {
         @include modules.section-title;
@@ -20,7 +82,7 @@
     font-size: variables.$primary-font-size;
     font-family: variables.$primary-font;
     font-weight: 500;
-    margin-bottom: 1em;
+    margin-bottom: 1.5em;
     width: 100%;
     height: auto;
 }
@@ -30,9 +92,10 @@
 }
 
 .work__project-image {
-    width: 75%;
+    display: flex;
+    width: 70%;
     height: auto;
-    margin: 2em;
+    margin: 0 auto;
     border-radius: 6px; 
     
     @include modules.neon-border;
