@@ -19,7 +19,8 @@ body::before {
 
 body {
   background-image: url(/imgs/greg-rosenke-_8mv1nzwb_s-unsplash.jpg);
-  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
 
