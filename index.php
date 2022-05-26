@@ -11,12 +11,16 @@
 
   <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet"> 
 
 
   <!-- make the title more gripping, more key words etc. for the purpose of SEO -->
@@ -125,8 +129,8 @@ The page is very simple. It contains short description of prided services and co
   <footer>
 
   <ul>
-    <li class = "facebook"><a href="https://www.facebook.com/annecreeyates" target=_blank class="fa fa-facebook"></a></li>
-    <li class = "twitter"><a href="https://twitter.com/CreeYates" target=_blank class="fa fa-twitter"></a></li>
+    <!-- <li class = "facebook"><a href="https://www.facebook.com/annecreeyates" target=_blank class="fa fa-facebook"></a></li>
+    <li class = "twitter"><a href="https://twitter.com/CreeYates" target=_blank class="fa fa-twitter"></a></li> -->
     <li class = "linkedin"><a href="https://www.linkedin.com/in/annawrzosek/" target=_blank class="fa fa-linkedin"></a></li>
     <li class = "github"><a href="https://github.com/AnneCreeYates" target=_blank class="fa fa-github"></a></li>
   </ul>
