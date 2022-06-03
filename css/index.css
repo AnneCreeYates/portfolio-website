@@ -349,15 +349,18 @@ body {
 .contact .contact__title {
   grid-area: contact__title;
 }
-.contact form {
-  grid-area: form;
+.contact .contact__form-wrapper {
+  grid-area: form-wrapper;
 }
 @media (min-width: 40em) {
   .contact {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    grid-template-areas: "contact__title form form";
+    grid-template-areas: "contact__title form-wrapper form-wrapper";
+  }
+  .contact .contact__form-wrapper {
+    max-width: 40em;
   }
   .contact .name, .contact .email, .contact .subject {
     font-size: 0.8em;
@@ -423,33 +426,9 @@ body {
 footer ul {
   background-color: rgba(116, 63, 116, 0.7);
   list-style: none;
-  margin: auto;
-  justify-content: right;
   padding: 1em;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "facebook twitter linkedin github";
-}
-footer ul .facebook {
-  grid-area: facebook;
-}
-footer ul .twitter {
-  grid-area: twitter;
-}
-footer ul .linkedin {
-  grid-area: linkedin;
-}
-footer ul .github {
-  grid-area: github;
-}
-@media (min-width: 40em) {
-  footer ul {
-    grid-template-columns: 1fr repeat(4, min-content) 1fr;
-    grid-template-areas: " . facebook twitter linkedin github . ";
-  }
-}
-footer ul li {
-  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 footer ul a {
   display: flex;

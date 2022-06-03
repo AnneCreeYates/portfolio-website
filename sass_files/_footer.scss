@@ -6,45 +6,46 @@ footer {
     ul {
         background-color: rgba($color: variables.$primary-clr, $alpha: .7);
         list-style: none;
-        margin: auto;
-        justify-content:right;
+        // margin: auto;
+        // justify-content:right;
         padding: 1em;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        justify-content: center;
+        // grid-template-columns: repeat(2, 1fr);
     
         
 
-        .facebook {
-            grid-area: facebook;
+        // .facebook {
+        //     grid-area: facebook;
             
-        }
+        // }
 
-        .twitter {
-            grid-area: twitter;
-        }
+        // .twitter {
+        //     grid-area: twitter;
+        // }
 
-        .linkedin {
-            grid-area: linkedin;
-        }
+        // .linkedin {
+        //     grid-area: linkedin;
+        // }
 
-        .github {
-            grid-area: github;
-        }
+        // .github {
+        //     grid-area: github;
+        // }
 
-        grid-template-areas: 
-        "facebook twitter linkedin github";
+        // grid-template-areas: 
+        // "linkedin github";
 
-        @include modules.mq {
-            grid-template-columns: 1fr repeat(4, min-content) 1fr;
-            grid-template-areas:
-            " . facebook twitter linkedin github . ";
+        // @include modules.mq {
+        //     // grid-template-columns: 1fr repeat(2, 1fr);
+        //     // grid-template-areas:
+        //     // " . linkedin github . ";
+        
+        // }
 
-        }
+        // li {
+        //     margin: auto;
 
-        li {
-            margin: auto;
-
-        }
+        // }
 
 
         a {
