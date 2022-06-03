@@ -20,11 +20,7 @@
 
         margin: 0 2em;
 
-        background-color: rgba(rgb(107, 105, 105), 0.5);
-        padding: 2em;
-        border-radius: 25px;
-        
-        backdrop-filter: blur(2px);
+        @include modules.text-container-bg;
     }
 
     img {

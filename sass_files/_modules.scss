@@ -16,7 +16,12 @@
   margin-bottom: 0.3em;
 }
 
-
+@mixin text-container-bg {
+  background-color: rgba(rgb(107, 105, 105), 0.5);
+  padding: 2em;
+  border-radius: 25px;
+  backdrop-filter: blur(2px);
+}
 
 // MEDIA QUERIES
 //width in the mixin is the default value if no specific one is provided

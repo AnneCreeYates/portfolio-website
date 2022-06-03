@@ -91,17 +91,18 @@
   </section>
 
   <section class="work">
-    <!-- <div class="work__wrapper"> -->
+    <div class="work__wrapper">
       <h1 id="work" class = "work__header">Latest Project</h1>
       <h2 class = "work__project-title">Landing page for a young solicitor</h2>
         <p class = "work__project-description">Beginning a new career in any industry is always stressful, so I built this simple landing page to help a young solicitor start growing their presence online and maybe build their confidence in their abilities.
 The page is very simple. It contains short description of prided services and contact details – a business card style.</p>
+    </div>
         <a href="http://solicitor-southkensington.rf.gd" target="_blank">
             <img class = "work__project-image" src="imgs\the-shard-london-skyline2-forweb.jpg" alt="black and white London skyline featuring the Shard"/>
         </a>
 
         <!-- <button class = "github-repo__button" type = "button" >GitHub Repo</button> -->
-    <!-- </div> -->
+    
   </section>
 
   <section class="contact">

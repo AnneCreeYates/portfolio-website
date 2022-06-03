@@ -11,36 +11,45 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-    "work"
-    "work__project-title"
-    "work__project-description"
+    "container"
+
     "work__project-image";
 
-    .work__header {
-        grid-area: work;
+    
+    .work__wrapper {
+        grid-area: container;
     }
 
-    .work__project-title {
-        grid-area: work__project-title;
-    }
 
-    .work__project-description {
-        grid-area: work__project-description;
-    }
+    // .work__header {
+    //     grid-area: work;
+    // }
+
+    // .work__project-title {
+    //     grid-area: work__project-title;
+    // }
+
+    // .work__project-description {
+    //     grid-area: work__project-description;
+    // }
 
     a {
         grid-area: work__project-image;
     }
 
+    .work__wrapper {
+        @include modules.text-container-bg;
+    }
 
     @include modules.mq (60em){
+        display: grid;
         padding: 10vh;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 0.2fr min-content 1fr;
         grid-template-areas:
-        "work                         work__project-image work__project-image"
-        "work__project-title          work__project-image work__project-image"
-        "work__project-description    work__project-image work__project-image";
+        "container    work__project-image work__project-image"
+        "container    work__project-image work__project-image"
+        "container    work__project-image work__project-image";
         
 
         .work__project-image {
@@ -95,7 +104,7 @@
     display: flex;
     width: 70%;
     height: auto;
-    margin: 0 auto;
+    margin: 2em auto 0;
     border-radius: 6px; 
     
     @include modules.neon-border;
