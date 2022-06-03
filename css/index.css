@@ -101,7 +101,7 @@ body {
   transform: rotate(19deg);
 }
 .main-nav .main-nav__about-link, .main-nav .main-nav__contact-link {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 .main-nav .main-nav__work-link {
   font-size: 1.7em;
@@ -173,20 +173,24 @@ body {
 }
 
 .about {
-  display: grid;
+  display: flex;
   width: 100%;
   height: auto;
   padding: 9vh 2.5em;
-  background-color: rgba(174, 255, 23, 0.2);
+}
+.about .about__wrapper {
+  display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "image" "about__title" "about__para" "getInTouch__para";
+  grid-template-areas: "about__title" "about__para" "getInTouch__para";
+  margin: 0 2em;
+  background-color: rgba(107, 105, 105, 0.5);
+  padding: 2em;
+  border-radius: 25px;
+  backdrop-filter: blur(2px);
 }
 .about img {
   display: none;
-}
-.about .laptop__image {
-  grid-area: image;
 }
 .about .about__title {
   grid-area: about__title;
@@ -200,9 +204,6 @@ body {
 @media (min-width: 40em) {
   .about {
     padding: 10vh 5vw;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: max-content;
-    grid-template-areas: "image about__title " "image about__para " "image getInTouch__para ";
   }
   .about img {
     display: flex;
@@ -214,14 +215,16 @@ body {
 }
 @media (min-width: 60em) {
   .about img {
-    width: 20vw;
+    width: 30vw;
     margin: 1vh 1.7vw;
   }
   .about {
     padding: 10vh 13vw;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: max-content;
-    grid-template-areas: " . image about__title about__title about__title . " " . image about__para about__para about__para . " " . image getInTouch__para getInTouch__para getInTouch__para . ";
+  }
+}
+@media (min-width: 86em) {
+  .about img {
+    width: 20vw;
   }
 }
 .about h1 {
@@ -337,7 +340,6 @@ body {
 }
 
 .contact {
-  background-color: rgba(174, 255, 23, 0.2);
   padding: 2.5em;
   height: 0 auto;
   grid-template-columns: 1fr;

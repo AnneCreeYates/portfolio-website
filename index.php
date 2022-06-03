@@ -71,10 +71,12 @@
   </section>
 
   <section id = "about" class="about">
-    <!-- <div class="about__wrapper"> -->
+    
       <figure class = "laptop__image">
         <img src="/imgs/laptop.jpg" alt = "an open laptop on a wooden table with writing on the screen 'I design and devlop experiences that make people's lives simple'">
       </figure>
+
+    <div class="about__wrapper">  
       <h1 class="about__title">About me</h1>
       <p class = "about__para">
       I am an artist that has found in front end development a new form of expression.
@@ -85,9 +87,7 @@
       <p class = "getInTouch__para">
         If you have any questions go ahead and<a href=#contact class="contact-link"> get in touch.</a>
       </p>
-
-
-    <!-- </div> -->
+    </div>
   </section>
 
   <section class="work">

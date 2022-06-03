@@ -2,26 +2,39 @@
 @use 'modules';
 
 .about {
-    display: grid;
+    display: flex;
     width: 100%;
     height: auto;
     padding: 9vh 2.5em;
-    background-color: rgba($color: variables.$title-clr, $alpha: 0.2);
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "image"
-    "about__title"
-    "about__para"
-    "getInTouch__para";
+    
+
+    
+    .about__wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "about__title"
+        "about__para"
+        "getInTouch__para";
+
+        margin: 0 2em;
+
+        background-color: rgba(rgb(107, 105, 105), 0.5);
+        padding: 2em;
+        border-radius: 25px;
+        
+        backdrop-filter: blur(2px);
+    }
 
     img {
         display: none;
+        
     }
 
-    .laptop__image {
-        grid-area: image;
-    }
+    // .laptop__image {
+    //     grid-area: image;
+    // }
 
     .about__title {
         grid-area: about__title;
@@ -40,12 +53,12 @@
     @include modules.mq {
 
         padding: 10vh 5vw;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: max-content;
-        grid-template-areas:
-        "image about__title "
-        "image about__para "
-        "image getInTouch__para ";
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: max-content;
+        // grid-template-areas:
+        // "image about__title "
+        // "image about__para "
+        // "image getInTouch__para ";
 
         img {
             display: flex;
@@ -60,21 +73,26 @@
 
     @include modules.mq (60em) {
         img {
-            width:20vw;
+            width:30vw;
             margin: 1vh 1.7vw;
-
         }
         
         & {
             padding: 10vh 13vw;
-            grid-template-columns: repeat(6, 1fr);
-            grid-template-rows: max-content;
-            grid-template-areas:
-            " . image about__title about__title about__title . "
-            " . image about__para about__para about__para . "
-            " . image getInTouch__para getInTouch__para getInTouch__para . ";
+            // grid-template-columns: repeat(6, 1fr);
+            // grid-template-rows: max-content;
+            // grid-template-areas:
+            // " . image about__title about__title about__title . "
+            // " . image about__para about__para about__para . "
+            // " . image getInTouch__para getInTouch__para getInTouch__para . ";
 
     
+        }
+    }
+
+    @include modules.mq (86em) {
+        img {
+            width: 20vw;
         }
     }
     
@@ -114,6 +132,4 @@
 
     
 }
-
-
 
