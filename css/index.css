@@ -446,3 +446,49 @@ footer ul a {
   text-decoration: none;
   padding: 1em;
 }
+
+.thank-you {
+  background-image: url(/imgs/greg-rosenke-_8mv1nzwb_s-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.thank-you-message {
+  display: flex;
+  flex-direction: column;
+  color: rgb(174, 255, 23);
+  font-family: "Zen Loop", cursive;
+  font-size: 2.7em;
+  text-align: center;
+  justify-content: center;
+  height: 100vh;
+  width: auto;
+  text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 3px rgb(244, 247, 203), 0 0 2em rgb(255, 254, 196);
+}
+
+.return-button__bubble {
+  background: none;
+  display: flex;
+  width: 4em;
+  height: 4em;
+  position: relative;
+  margin: 1em auto;
+  border: rgb(245, 245, 219) 4px solid;
+  border-radius: 50%;
+  box-shadow: inset 0 0 1em rgb(245, 245, 219), 0 0 1em rgb(245, 245, 219), inset 0 0 0.3em white, 0 0 2em white;
+}
+.return-button__bubble a {
+  font-size: 1em;
+  color: rgb(245, 245, 219);
+  position: relative;
+  margin: 1em auto;
+  transform: rotate(-19deg);
+  text-decoration: none;
+  line-height: 0.8em;
+  font-weight: 600;
+  text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
+}
+.return-button__bubble:hover {
+  cursor: pointer;
+}

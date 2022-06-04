@@ -1,0 +1,60 @@
+@use 'variables';
+@use 'modules';
+
+.thank-you {
+    
+    background-image: url(/imgs/greg-rosenke-_8mv1nzwb_s-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.thank-you-message {
+    display: flex;
+    flex-direction: column;
+    color: variables.$title-clr;
+    font-family: variables.$intro-font;
+    font-size: calc(variables.$title-font-size * 0.9);
+    text-align: center;
+    justify-content: center;
+    height: 100vh;
+    width: auto;
+    text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 3px rgb(244, 247, 203), 0 0 2em rgb(255, 254, 196);
+
+}
+
+.return-button__bubble {
+    
+    background: none;
+    display: flex;
+    width: 4em;
+    height: 4em;
+    position: relative;
+    margin: 1em auto;
+    border: variables.$nav-secondary-clr 4px solid;
+    border-radius: 50%;
+        
+    @include modules.neon-border;
+    
+
+    & a {
+        
+        font-size: 1em;
+        color: variables.$nav-secondary-clr;
+        position: relative;
+        margin: 1em auto;
+        transform: rotate(-19deg);
+        text-decoration: none;
+        line-height: 0.8em;
+        font-weight: 600;
+
+        @include modules.neon-text;
+        
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+
+}
