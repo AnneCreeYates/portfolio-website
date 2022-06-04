@@ -30,18 +30,17 @@
 
 .main-nav {
     position: fixed;
+    top: -0.025em;
     display: flex;
     width: fit-content;
     font-size: variables.$nav-font-size;
     font-family: variables.$primary-font;
-    margin: -1.6em 0;
     z-index: 10;
       
 
     .main-nav__menu {
         transform: translateX(-200%);
         transition: transform ease-in-out 250ms;
-        // display:none;
         visibility: none;
         height: 0;
     }

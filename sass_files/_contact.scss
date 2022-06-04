@@ -7,7 +7,7 @@
     padding: 2.5em;
     height: 0 auto;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    // grid-template-rows: auto;
     
     .contact__title {
         grid-area: contact__title;
@@ -21,7 +21,7 @@
     @include modules.mq (40em){
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+        // grid-template-rows: auto;
         
         grid-template-areas: 
         "contact__title form-wrapper form-wrapper";
@@ -49,6 +49,8 @@
         @include modules.neon-text;
 
         padding: 0 0.5em;
+        justify-self: end;
+
     }
 }
 

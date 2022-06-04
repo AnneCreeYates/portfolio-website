@@ -2,7 +2,7 @@
 @use 'modules';
 
 .about {
-    display: flex;
+    display: grid;
     width: 100%;
     height: auto;
     padding: 9vh 2.5em;
@@ -10,15 +10,16 @@
 
     
     .about__wrapper {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "about__title"
-        "about__para"
-        "getInTouch__para";
+        display: flex;
+        flex-direction: column;
+        // grid-template-columns: 1fr;
+        // grid-template-rows: 1fr;
+        // grid-template-areas:
+        // "about__title"
+        // "about__para"
+        // "getInTouch__para";
 
-        margin: 0 2em;
+        // margin: 0 2em;
 
         @include modules.text-container-bg;
     }
@@ -28,40 +29,43 @@
         
     }
 
-    // .laptop__image {
-    //     grid-area: image;
+    .laptop__image {
+        grid-area: image;
+    }
+
+    .about__wrapper {
+        grid-area: wrapper;
+    }
+
+    // .about__title {
+    //     grid-area: about__title;
+    
     // }
 
-    .about__title {
-        grid-area: about__title;
-    
-    }
+    // .about__para {
+    //     grid-area: about__para;
 
-    .about__para {
-        grid-area: about__para;
+    // }
 
-    }
-
-    .getInTouch__para {
-        grid-area: getInTouch__para;
-    }
+    // .getInTouch__para {
+    //     grid-area: getInTouch__para;
+    // }
 
     @include modules.mq {
 
         padding: 10vh 5vw;
-        // grid-template-columns: repeat(2, 1fr);
-        // grid-template-rows: max-content;
-        // grid-template-areas:
-        // "image about__title "
-        // "image about__para "
-        // "image getInTouch__para ";
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: max-content;
+        grid-template-areas:
+        "image wrapper"
+        "image wrapper"
+        "image wrapper";
 
         img {
             display: flex;
-            width:40vw;
+            width: 40vw;
             height: auto;
             border-radius: 24px;
-            margin: 0 auto;
             
         }
    
@@ -74,13 +78,12 @@
         }
         
         & {
-            padding: 10vh 13vw;
-            // grid-template-columns: repeat(6, 1fr);
-            // grid-template-rows: max-content;
-            // grid-template-areas:
-            // " . image about__title about__title about__title . "
-            // " . image about__para about__para about__para . "
-            // " . image getInTouch__para getInTouch__para getInTouch__para . ";
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: max-content;
+            grid-template-areas:
+            " . image wrapper wrapper . "
+            " . image wrapper wrapper . "
+            " . image wrapper wrapper . ";
 
     
         }

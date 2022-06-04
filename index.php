@@ -59,13 +59,14 @@
 
 
   <section class="intro" id="intro">
-
+    <div class = "intro-container">
       <header>
         <p class = "intro__hello">Hello!</p>
         <p class = "intro__name"> I'm Anna</p>
         <p class = "intro__title">Front End Developer</p>
         <p class = "intro__location">located in <span class = "intro-location__span">London</span></p>
       </header>
+    </div>
 
       
   </section>

@@ -48,11 +48,11 @@ body {
 
 .main-nav {
   position: fixed;
+  top: -0.025em;
   display: flex;
   width: fit-content;
   font-size: 2em;
   font-family: "Quicksand", sans-serif;
-  margin: -1.6em 0;
   z-index: 10;
 }
 .main-nav .main-nav__menu {
@@ -129,17 +129,29 @@ body {
   transition: transform ease-in 350ms;
 }
 
+.intro-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  justify-content: end;
+}
+
 .intro {
   position: relative;
-  display: block;
+  display: flex;
   color: rgb(174, 255, 23);
   font-family: "Zen Loop", cursive;
-  font-size: 3em;
+  font-size: 2.7em;
   text-align: right;
-  margin: 1em 1em -1em;
+  margin: 1em 1em;
   height: 100vh;
   width: auto;
   text-shadow: 1px 1px 1px rgb(173, 243, 8), 2px 0 3px rgb(244, 247, 203), 0 0 2em rgb(255, 254, 196);
+}
+@media (min-width: 50em) {
+  .intro {
+    font-size: 3.3em;
+  }
 }
 @media (min-width: 70em) {
   .intro {
@@ -173,17 +185,14 @@ body {
 }
 
 .about {
-  display: flex;
+  display: grid;
   width: 100%;
   height: auto;
   padding: 9vh 2.5em;
 }
 .about .about__wrapper {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "about__title" "about__para" "getInTouch__para";
-  margin: 0 2em;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(107, 105, 105, 0.5);
   padding: 2em;
   border-radius: 25px;
@@ -192,25 +201,24 @@ body {
 .about img {
   display: none;
 }
-.about .about__title {
-  grid-area: about__title;
+.about .laptop__image {
+  grid-area: image;
 }
-.about .about__para {
-  grid-area: about__para;
-}
-.about .getInTouch__para {
-  grid-area: getInTouch__para;
+.about .about__wrapper {
+  grid-area: wrapper;
 }
 @media (min-width: 40em) {
   .about {
     padding: 10vh 5vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+    grid-template-areas: "image wrapper" "image wrapper" "image wrapper";
   }
   .about img {
     display: flex;
     width: 40vw;
     height: auto;
     border-radius: 24px;
-    margin: 0 auto;
   }
 }
 @media (min-width: 60em) {
@@ -219,7 +227,9 @@ body {
     margin: 1vh 1.7vw;
   }
   .about {
-    padding: 10vh 13vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: max-content;
+    grid-template-areas: " . image wrapper wrapper . " " . image wrapper wrapper . " " . image wrapper wrapper . ";
   }
 }
 @media (min-width: 86em) {
@@ -254,7 +264,7 @@ body {
   text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
 }
 .about .contact-link:hover {
-  color: #743f74;
+  color: rgba(117, 66, 117, 0.3);
 }
 
 .work {
@@ -263,7 +273,7 @@ body {
   width: 100vw;
   height: auto;
   padding: 9vh 2.5em;
-  background-color: rgba(116, 63, 116, 0.7);
+  background-color: rgba(117, 66, 117, 0.7);
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "container" "work__project-image";
@@ -344,7 +354,6 @@ body {
   padding: 2.5em;
   height: 0 auto;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
 }
 .contact .contact__title {
   grid-area: contact__title;
@@ -356,7 +365,6 @@ body {
   .contact {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
     grid-template-areas: "contact__title form-wrapper form-wrapper";
   }
   .contact .contact__form-wrapper {
@@ -382,6 +390,7 @@ body {
   margin-bottom: 0.3em;
   text-shadow: 0 0 0.1em rgb(245, 245, 219), 0 0 0.5em white;
   padding: 0 0.5em;
+  justify-self: end;
 }
 
 .name, .email, .subject {
@@ -424,7 +433,7 @@ body {
 }
 
 footer ul {
-  background-color: rgba(116, 63, 116, 0.7);
+  background-color: rgba(117, 66, 117, 0.7);
   list-style: none;
   padding: 1em;
   display: flex;
